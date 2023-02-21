@@ -2,9 +2,13 @@ body {
   text-align: center;
 }
 h1 {
-  color: rgb(190, 124, 0);
+  background-color: black;
+  color: red;
 }
 #kategori {
+  width: 300px;
+}
+#pazaryeri {
   width: 300px;
 }
 option {
@@ -13,13 +17,13 @@ option {
 #btnHesaplama {
   width: 100px;
   height: 30px;
-  background-color: rgb(190, 124, 0);
+  background-color: red;
   color: white;
-  border-color: rgb(190, 124, 0);
+  border-color: red;
   border-radius: 5px;
 }
 #btnHesaplama:active {
-  color: rgb(190, 124, 0);
+  color: black;
   background-color: white;
 }
 #kesilen {
