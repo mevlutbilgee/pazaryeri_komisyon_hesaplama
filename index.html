@@ -9,6 +9,7 @@
   </head>
   <body>
     <h1>Pazaryeri Komisyon Hesaplama</h1>
+    <br />
     <label for="pazaryeri">Pazaryeri Seçiniz</label>
     <br />
     <select name="pazaryeri" id="pazaryeri">
@@ -22,8 +23,17 @@
     </select>
     <br /><br /><br />
     <label for="kategori">Kategori seçiniz</label>
-    <br /><br />
-    <select name="kategori" id="kategori"></select>
+    <br />
+    <input
+      list="kategoriList"
+      type="search"
+      name=""
+      id="kategori"
+      placeholder=" Ürün Kategorisi Ara"
+    />
+    <datalist id="kategoriList"></datalist>
+    <!-- <select name="kategori" id="kategori" ></select>  -->
+    <!-- </select> -->
     <br /><br /><br />
     <label for="satisInput">Satış Fiyatı (KDV dahil)</label>
     <br />
@@ -34,8 +44,34 @@
     <input type="number" id="alisInput" />
     <br /><br /><br />
     <button id="btnHesaplama">Hesapla</button>
-    <br /><br /><br />
-    <section id="sonucListesi"></section>
+    <br /><br />
+    <div id="sonucBox">
+      <h2 id="sonucBaslik">Hesaplama Sonucu :</h2>
+      <div class="box">
+        <p class="text">Komisyon oranı :</p>
+        <p class="sonuc" id="komisyonOrani"></p>
+      </div>
+      <div class="box">
+        <p class="text">Satış Fiyatı (KDV Dahil) :</p>
+        <p class="sonuc" id="satisKdvDahil"></p>
+      </div>
+      <div class="box">
+        <p class="text">Satış Fiyatı (KDV Hariç) :</p>
+        <p class="sonuc" id="satisKdvHaric"></p>
+      </div>
+      <div class="box">
+        <p class="text">Alış Fiyatı :</p>
+        <p class="sonuc" id="alisFiyati"></p>
+      </div>
+      <div class="box">
+        <p class="text">Komisyon kesintisi :</p>
+        <p class="sonuc" id="komisyonKesinti"></p>
+      </div>
+      <div class="box">
+        <p class="text">Net Kâr :</p>
+        <p class="sonuc" id="netkarSonuc"></p>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>

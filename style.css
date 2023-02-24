@@ -1,22 +1,57 @@
 body {
   text-align: center;
+  background-color: blue;
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
+}
+#sonucBaslik {
+  margin-left: 20px;
+}
+#sonucBox {
+  color: black;
+  background-color: white;
+  width: 400px;
+  height: 350px;
+  margin: auto;
+  border-radius: 10px;
+}
+.box {
+  display: flex;
+  margin-left: 20px;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+.text {
+  font-weight: bold;
 }
 h1 {
-  background-color: black;
-  color: red;
-}
-#kategori {
-  width: 300px;
+  margin-top: 0.5rem;
 }
 #pazaryeri {
-  width: 300px;
-}
-option {
   width: 500px;
-}
-#btnHesaplama {
-  width: 100px;
   height: 30px;
+  border-radius: 5px;
+}
+
+#kategori {
+  width: 500px;
+  height: 30px;
+  border-radius: 5px;
+}
+#kategori option {
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+}
+input {
+  width: 500px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#btnHesaplama {
+  width: 120px;
+  height: 40px;
   background-color: red;
   color: white;
   border-color: red;
@@ -26,9 +61,15 @@ option {
   color: black;
   background-color: white;
 }
-#kesilen {
+input {
+  width: 400px;
+}
+#netkarSonuc {
+  color: rgb(2, 167, 2);
+}
+#komisyonKesinti {
   color: red;
 }
-#kar {
-  color: green;
+#alisFiyati {
+  color: red;
 }

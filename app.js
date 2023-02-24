@@ -6,11 +6,16 @@ const pazaryeriCiceksepeti = document.getElementById("pazaryeriCiceksepeti");
 const pazaryeriN11 = document.getElementById("pazaryeriN11");
 const pazaryeriAmazon = document.getElementById("pazaryeriAmazon");
 const kategori = document.getElementById("kategori");
+const kategoriList = document.getElementById("kategoriList");
 const satisInput = document.getElementById("satisInput");
 const alisInput = document.getElementById("alisInput");
 const sonucListesi = document.getElementById("sonucListesi");
-const sonuc = document.createElement("ul");
-sonucListesi.appendChild(sonuc);
+const komisyonOrani = document.getElementById("komisyonOrani");
+const satisKdvDahil = document.getElementById("satisKdvDahil");
+const satisKdvHaric = document.getElementById("satisKdvHaric");
+const alisFiyati = document.getElementById("alisFiyati");
+const komisyonKesinti = document.getElementById("komisyonKesinti");
+const netkarSonuc = document.getElementById("netkarSonuc");
 // console.log(k2.textContent);
 // console.log(kategori.textContent);
 pazaryeri.addEventListener("click", () => {
@@ -18,7 +23,7 @@ pazaryeri.addEventListener("click", () => {
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // ---------------TRENDYOL------------------------------
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    kategori.innerHTML = `<option id="1" value="Altın (işlenmemiş)">Altın (işlenmemiş)</option>
+    kategoriList.innerHTML = `<option id="1" value="Altın (işlenmemiş)">Altın (işlenmemiş)</option>
       <option id="2" value="Atkı, Atkı, Bere, Boyunluk, Eldiven">
         Atkı, Atkı, Bere, Boyunluk, Eldiven
       </option>
@@ -28,9 +33,7 @@ pazaryeri.addEventListener("click", () => {
         Çantası, Laptop Çantası, Okul Çantası, Omuz Çantası, Plaj Çantası,
         Çanta, Postacı Çantası, Sırt Çantası, Spor Çantası, Cüzdan, Kartlık"
       >
-        Abiye Çanta, Bel Çantası, Beslenme Çantası, Çanta Aksesuarları, El
-        Çantası, Laptop Çantası, Okul Çantası, Omuz Çantası, Plaj Çantası,
-        Çanta, Postacı Çantası, Sırt Çantası, Spor Çantası, Cüzdan, Kartlık
+        
       </option>
       <option
         id="4"
@@ -38,9 +41,7 @@ pazaryeri.addEventListener("click", () => {
         Aksesuarları, Bijuteri Bileklik, Çelik Bileklik, Gümüş Bileklik, Choker,
         Bijuteri Kolye, Çelik Kolye, Gümüş Küpe, Gümüş Kolye"
       >
-        Kemer, Saç Aksesuarı, Pantolon Askısı, Kol Düğmesi, Şapka, Halhal Ayak
-        Aksesuarları, Bijuteri Bileklik, Çelik Bileklik, Gümüş Bileklik, Choker,
-        Bijuteri Kolye, Çelik Kolye, Gümüş Küpe, Gümüş Kolye
+        
       </option>
       <option id="5" value="Gözlük, Saat, Mücevher">
         Gözlük, Saat, Mücevher
@@ -61,8 +62,7 @@ pazaryeri.addEventListener("click", () => {
         value="Ana Kucağı, Yürüteç, Portbebe, Bebek Arabası/Puset, Telsiz, Kamera,
         Dedektör"
       >
-        Ana Kucağı, Yürüteç, Portbebe, Bebek Arabası/Puset, Telsiz, Kamera,
-        Dedektör
+        
       </option>
       <option id="13" value="Akülü Araçlar">Akülü Araçlar</option>
       <option id="14" value="Çocuk Kutu Oyunları, Bebek/Okul Öncesi Oyuncaklar">
@@ -76,8 +76,7 @@ pazaryeri.addEventListener("click", () => {
         value="Çocuk Bisikleti, Pateni, Scooterı,Spor Oyuncakları, Şişme Havuz &
         Aksesuarları, Deniz Malzemeleri, Plaj Oyuncakları"
       >
-        Çocuk Bisikleti, Pateni, Scooterı,Spor Oyuncakları, Şişme Havuz &
-        Aksesuarları, Deniz Malzemeleri, Plaj Oyuncakları
+        
       </option>
       <option
         id="17"
@@ -93,8 +92,7 @@ pazaryeri.addEventListener("click", () => {
         value="Bulaşık Makineleri, Buzdolapları, Çamaşır Makineleri, Derin
         Dondurucular, Kurutma Makineleri"
       >
-        Bulaşık Makineleri, Buzdolapları, Çamaşır Makineleri, Derin
-        Dondurucular, Kurutma Makineleri
+        
       </option>
       <option id="20" value="Ağ Modem, Akıllı Ev, E-Kitap Okuyucu">
         Ağ Modem, Akıllı Ev, E-Kitap Okuyucu
@@ -106,10 +104,7 @@ pazaryeri.addEventListener("click", () => {
         Overclock, UPS ve Akü, Notebook Soğutucu, Monitor, Hafıza Kartı, Oyuncu
         Monitör, TV Kartları"
       >
-        Anakart, Bellek (RAM), Bilgisayar Kasası, Bilgisayar Yedek Parça, Ekran
-        Kartı, İşlemci, Optik Sürücü, Power Supply (PSU), Ses Kartı, Soğutucu ve
-        Overclock, UPS ve Akü, Notebook Soğutucu, Monitor, Hafıza Kartı, Oyuncu
-        Monitör, TV Kartları
+        
       </option>
       <option id="22" value="Yazılım Ürünleri">Yazılım Ürünleri</option>
       <option id="23" value="Bilgisayar ve Tablet Aksesuarları">
@@ -120,8 +115,7 @@ pazaryeri.addEventListener("click", () => {
         value="Dizüstü Bilgisayar, Tablet, Grafik Tablet, Oyuncu Dizüstü Bilgisayarı,
         All-in-One Monitor PC"
       >
-        Dizüstü Bilgisayar, Tablet, Grafik Tablet, Oyuncu Dizüstü Bilgisayarı,
-        All-in-One Monitor PC
+        
       </option>
       <option
         id="25"
@@ -129,9 +123,7 @@ pazaryeri.addEventListener("click", () => {
         Hoparlör, Kablo / Adaptör, Klavye, Media Player, Mouse & Mousepad, Çoklu
         Depolama Ünitesi, Taşınabilir Hard Disk, Taşınabilir SSD, USB"
       >
-        Oyuncu Kulaklıkları, Oyuncu Mouseları, Oyuncu Mousepad, Oyuncu Klavyesi,
-        Hoparlör, Kablo / Adaptör, Klavye, Media Player, Mouse & Mousepad, Çoklu
-        Depolama Ünitesi, Taşınabilir Hard Disk, Taşınabilir SSD, USB
+        
       </option>
       <option
         id="26"
@@ -153,27 +145,21 @@ pazaryeri.addEventListener("click", () => {
         Mikser/MikserSeti, Mini / Midi Fırın, Su Isıtıcı/Kettle, Tartı, Tost
         Makinesi"
       >
-        Dikiş Makineleri, Fritöz, Ekmek / Yoğurt Yapma Makinesi, Blender/Blender
-        Seti, Çay/Kahve Makineleri, Diğer Elektrikli Pişiriciler, Ekmek Kızartma
-        Makinesi, Doğrayıcı/Rondo, Meyve/Sebze Sıkacağı, Mikrodalga Fırın,
-        Mikser/MikserSeti, Mini / Midi Fırın, Su Isıtıcı/Kettle, Tartı, Tost
-        Makinesi
+        
       </option>
       <option
         id="30"
         value=" Süpürge, Ütü, Aksiyon Kameraları, Sualtı Fotoğraf Makineleri, Foto &
         Kamera Aksesuarları"
       >
-        Süpürge, Ütü, Aksiyon Kameraları, Sualtı Fotoğraf Makineleri, Foto &
-        Kamera Aksesuarları
+        
       </option>
       <option
         id="31"
         value="Aynasız Kompakt SLR Makineleri, SLR Fotoğraf Makineleri, Dijital
         Fotoğraf Makineleri, Video Kameralar"
       >
-        Aynasız Kompakt SLR Makineleri, SLR Fotoğraf Makineleri, Dijital
-        Fotoğraf Makineleri, Video Kameralar
+        
       </option>
       <option
         id="32"
@@ -197,10 +183,7 @@ pazaryeri.addEventListener("click", () => {
         Konsolları, PSP / Vita Konsolları, Nintendo Konsolları, Playstation
         Konsolları, Xbox Konsolları"
       >
-        Bilgisayar Oyunları, Nintendo Oyunları, Playstation Oyunları, Xbox
-        Oyunları, PSP / Vita Oyunları, Konsol Aksesuarları, Diğer Oyun
-        Konsolları, PSP / Vita Konsolları, Nintendo Konsolları, Playstation
-        Konsolları, Xbox Konsolları
+        
       </option>
       <option id="36" value="Akıllı Cep Telefonu">Akıllı Cep Telefonu</option>
       <option
@@ -208,16 +191,14 @@ pazaryeri.addEventListener("click", () => {
         value="Araç içi Telefon Tutucular, Bluetooth Araç Kiti, Powerbank, Şarj
         Cihazları ve Kabloları"
       >
-        Araç içi Telefon Tutucular, Bluetooth Araç Kiti, Powerbank, Şarj
-        Cihazları ve Kabloları
+        
       </option>
       <option
         id="38"
         value="Batarya, Ekran, Kamera, Telefon Kasası, Tuş Takımı, Kapak & Kılıf, Ekran
         Koruyucu"
       >
-        Batarya, Ekran, Kamera, Telefon Kasası, Tuş Takımı, Kapak & Kılıf, Ekran
-        Koruyucu
+        
       </option>
       <option id="39" value="Telsiz/Masaüstü Telefonları">
         Telsiz/Masaüstü Telefonları
@@ -233,8 +214,7 @@ pazaryeri.addEventListener("click", () => {
         value="DVD & Blu – Ray Oynatıcılar, Ev Sinema Hoparlörleri, Ev Sinema
         Sistemleri, Projeksiyon, Bluetooth Wireless Hoparlörler"
       >
-        DVD & Blu – Ray Oynatıcılar, Ev Sinema Hoparlörleri, Ev Sinema
-        Sistemleri, Projeksiyon, Bluetooth Wireless Hoparlörler
+        
       </option>
       <option
         id="43"
@@ -242,9 +222,7 @@ pazaryeri.addEventListener("click", () => {
         Kulakiçi Kulaklık, Kulaküstü Kulaklık, Mikrofon, MP Player / Ses Kayıt
         Cihazı, Müzik Sistemleri"
       >
-        Güvenlik Sistemleri, Kablo & Sarf Malzemeler, Bluetooth Kulaklık,
-        Kulakiçi Kulaklık, Kulaküstü Kulaklık, Mikrofon, MP Player / Ses Kayıt
-        Cihazı, Müzik Sistemleri
+        
       </option>
       <option id="44" value="Projeksiyon Aksesuarları, TV Aksesuarları">
         Projeksiyon Aksesuarları, TV Aksesuarları
@@ -255,8 +233,7 @@ pazaryeri.addEventListener("click", () => {
         value="Lazer Yazıcılar, Mürekkep Püskürtmeli Yazıcılar, Tanklı Yazıcılar,
         Tarayıcılar, Yazıcı Sarf Malzemeleri"
       >
-        Lazer Yazıcılar, Mürekkep Püskürtmeli Yazıcılar, Tanklı Yazıcılar,
-        Tarayıcılar, Yazıcı Sarf Malzemeleri
+        
       </option>
       <option id="47" value="Bahçe & Balkon Isıtma, Bahçe Makine Yağları">
         Bahçe & Balkon Isıtma, Bahçe Makine Yağları
@@ -273,8 +250,7 @@ pazaryeri.addEventListener("click", () => {
         value="Küçük El Aletleri, Elektrikli El Aletleri, Manuel El Aletleri, Havuz
         Ürünleri"
       >
-        Küçük El Aletleri, Elektrikli El Aletleri, Manuel El Aletleri, Havuz
-        Ürünleri
+        
       </option>
       <option id="51" value="Banyo Aksesuarları, Havlu & Bornoz, Klozet Takımı">
         Banyo Aksesuarları, Havlu & Bornoz, Klozet Takımı
@@ -292,8 +268,7 @@ pazaryeri.addEventListener("click", () => {
         value="Perde Aksesuarları, Yatak Odası Tekstili, Bebek&Çocuk, Nevresim Takımı,
         Bebek&Çocuk Pike, Bebek&Çocuk Uyku Seti, Bebek&Çocuk Yatak Örtüsü"
       >
-        Perde Aksesuarları, Yatak Odası Tekstili, Bebek&Çocuk, Nevresim Takımı,
-        Bebek&Çocuk Pike, Bebek&Çocuk Uyku Seti, Bebek&Çocuk Yatak Örtüsü
+        
       </option>
       <option id="57" value="Drone Aksesuarı">Drone Aksesuarı</option>
       <option
@@ -310,8 +285,7 @@ pazaryeri.addEventListener("click", () => {
         value="Yetişkin Hobi ve Oyun, Boya Malzemeleri, Sanatsal Malzemeler, Sanatsal
         Kağıtlar & Kalemler"
       >
-        Yetişkin Hobi ve Oyun, Boya Malzemeleri, Sanatsal Malzemeler, Sanatsal
-        Kağıtlar & Kalemler
+        
       </option>
       <option
         id="61"
@@ -320,10 +294,7 @@ pazaryeri.addEventListener("click", () => {
         Parça & Oto Krom Aksesuar, Basınçlı Yıkama ve Köpük Makineleri, Jantlar&
         Jant Kapakları"
       >
-        Oto Aksesuar, Akü ve Akü Takviye Kabloları, Elektrikli Araçlar,
-        Motosiklet Çanta ve Kasklar, Oto Ses Görüntü Sistemleri, Otomobil Yedek
-        Parça & Oto Krom Aksesuar, Basınçlı Yıkama ve Köpük Makineleri, Jantlar&
-        Jant Kapakları
+        
       </option>
       <option id="62" value="Yağ ve Motor Katkıları">
         Yağ ve Motor Katkıları
@@ -339,8 +310,7 @@ pazaryeri.addEventListener("click", () => {
         value="Motosiklet Aksesuarları, Motosiklet Koruma Ekipmanları, Motosiklet
         Bakım, Motosiklet Ekipmanları, Motosiklet Giyim, Motosiklet Yedek Parça"
       >
-        Motosiklet Aksesuarları, Motosiklet Koruma Ekipmanları, Motosiklet
-        Bakım, Motosiklet Ekipmanları, Motosiklet Giyim, Motosiklet Yedek Parça
+        
       </option>
       <option
         id="66"
@@ -363,9 +333,7 @@ pazaryeri.addEventListener("click", () => {
         Ürünleri, Hırdavat, İnşaat Malzemeleri, Küçük El Aletleri, Elektrikli El
         Aletleri, Manuel El Aletleri"
       >
-        Banyo Yapı Malzemeleri, Elektrikli El Aletleri ve Aksesuarları, Güvenlik
-        Ürünleri, Hırdavat, İnşaat Malzemeleri, Küçük El Aletleri, Elektrikli El
-        Aletleri, Manuel El Aletleri
+        
       </option>
       <option id="71" value="Elektrik ve Aydınlatma">
         Elektrik ve Aydınlatma
@@ -380,8 +348,7 @@ pazaryeri.addEventListener("click", () => {
         value="Ağız Bakım, Banyo & Duş Ürünleri, Deodorant & Kolonya, Deodorant &
         Kolonya, Ayak Bakımı, El & Tırnak Bakımı, Vücut Spreyi, Kadın Hijyen"
       >
-        Ağız Bakım, Banyo & Duş Ürünleri, Deodorant & Kolonya, Deodorant &
-        Kolonya, Ayak Bakımı, El & Tırnak Bakımı, Vücut Spreyi, Kadın Hijyen
+        
       </option>
       <option id="76" value="Cilt Bakım, Saç Bakım, Saç Şekillendirici, Makyaj">
         Cilt Bakım, Saç Bakım, Saç Şekillendirici, Makyaj
@@ -392,8 +359,7 @@ pazaryeri.addEventListener("click", () => {
         value="Cinsel Sağlık, Genel Sağlık, Gıda Takviyeleri/Vitaminler, Sporcu
         Besinleri, Supplementler, Hasta Bezi ve Temizlik"
       >
-        Cinsel Sağlık, Genel Sağlık, Gıda Takviyeleri/Vitaminler, Sporcu
-        Besinleri, Supplementler, Hasta Bezi ve Temizlik
+        
       </option>
       <option id="79" value="Medikal Maske">Medikal Maske</option>
       <option id="80" value="Ağda & Tüy Dökücüler">Ağda & Tüy Dökücüler</option>
@@ -412,9 +378,7 @@ pazaryeri.addEventListener("click", () => {
         Geliştirme Ekipmanları, Bisiklet ve Bisiklet, Aksesuarları,
         Kaykay/Paten/Scooter"
       >
-        Koşu bandı, kondisyon bisikleti, Vücut Geliştirme Aletleri, Vücut
-        Geliştirme Ekipmanları, Bisiklet ve Bisiklet, Aksesuarları,
-        Kaykay/Paten/Scooter
+        
       </option>
       <option
         id="84"
@@ -433,8 +397,7 @@ pazaryeri.addEventListener("click", () => {
         value="Alt Açma Minderi, Bebek Bakım Çantası, Kozmetik, Bebek Sağlık Ürünleri,
         Diğer Bebek Bakım Ürünleri"
       >
-        Alt Açma Minderi, Bebek Bakım Çantası, Kozmetik, Bebek Sağlık Ürünleri,
-        Diğer Bebek Bakım Ürünleri
+        
       </option>
       <option
         id="87"
@@ -451,8 +414,7 @@ pazaryeri.addEventListener("click", () => {
         value="Petshop Ürünleri, Kedi Mamaları, Köpek Mamaları, Kedi Ürünleri, Köpek
         Ürünleri"
       >
-        Petshop Ürünleri, Kedi Mamaları, Köpek Mamaları, Kedi Ürünleri, Köpek
-        Ürünleri
+        
       </option>
       <option
         id="91"
@@ -460,782 +422,619 @@ pazaryeri.addEventListener("click", () => {
         Sterilizatör, Biberon, Emzik, Saklama Aksesuarları, Mama Isıtıcı ve
         Hazırlayıcılar, Emzirme Örtüsü, Emzirme Yastığı, Mama Önlüğü"
       >
-        Alıştırma Bardakları, Beslenme Aksesuarları, Biberon Isıtıcı &
-        Sterilizatör, Biberon, Emzik, Saklama Aksesuarları, Mama Isıtıcı ve
-        Hazırlayıcılar, Emzirme Örtüsü, Emzirme Yastığı, Mama Önlüğü
+        
       </option>`;
   } else if (pazaryeri.value == pazaryeriHepsiburada.value) {
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // -----------------HEPSİBURADA-------------------------
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    kategori.innerHTML = `<option
+    kategoriList.innerHTML = `<option
         value="Gram Altın, Tam Altın, Yarım Altın, Çeyrek Altın, Hesaba Altın
 "
         id="hpsbrdk1"
       >
-        Gram Altın, Tam Altın, Yarım Altın, Çeyrek Altın, Hesaba Altın
+        
       </option>
       <option
         value="Cilt Bakımı, Güneş Ürünleri, Saç Bakım Ürünleri
 "
         id="hpsbrdk2"
       >
-        Cilt Bakımı, Güneş Ürünleri, Saç Bakım Ürünleri
+        
       </option>
       <option
         value="Valiz, bavul, seyahat çantası
 "
         id="hpsbrdk3"
       >
-        Valiz, bavul, seyahat çantası
+        
       </option>
       <option
         value="Spor Çanta, Sırt Çantası, Abiye Çanta, Günlük Çanta, Plaj Çantası, Dağcılık ve Kamp Çantası
 "
         id="hpsbrdk4"
       >
-        Spor Çanta, Sırt Çantası, Abiye Çanta, Günlük Çanta, Plaj Çantası,
-        Dağcılık ve Kamp Çantası
+        
       </option>
       <option
         value="Erkek Ayakkabı, Kadın Ayakkabı, Spor Ayakkabı, Babet, Terlik,Bot, Çizme, Outdoor Ayakkabı
 "
         id="hpsbrdk5"
       >
-        Erkek Ayakkabı, Kadın Ayakkabı, Spor Ayakkabı, Babet, Terlik,Bot, Çizme,
-        Outdoor Ayakkabı
+        
       </option>
       <option
         value="Giyim
 "
         id="hpsbrdk6"
       >
-        Giyim
+        
       </option>
       <option
         value="Kadın Parfüm, Erkek Parfüm, Parfüm Seti
 "
         id="hpsbrdk7"
       >
-        Kadın Parfüm, Erkek Parfüm, Parfüm Seti
+        
       </option>
       <option
         value="Outdoor Ekipmanları, Deniz Ekipmanları, Tekne Ürünleri, Deniz Motoru, Aksiyon Kameralar, Elektronik GPS Dürbünler
 "
         id="hpsbrdk8"
       >
-        Outdoor Ekipmanları, Deniz Ekipmanları, Tekne Ürünleri, Deniz Motoru,
-        Aksiyon Kameralar, Elektronik GPS Dürbünler
+        
       </option>
       <option
         value="Fitwear, Termal Eşofmanlar, Spor Şortu, Bisiklet Giyim
 "
         id="hpsbrdk9"
       >
-        Fitwear, Termal Eşofmanlar, Spor Şortu, Bisiklet Giyim
+        
       </option>
       <option
         value="Koşu bandı, Kondisyon Bisikleti, Spor & Kardiyo Aletleri, Fitness Kondisyon Aletleri, Vücut Geliştirme Aletleri, Vücut Geliştirme Ekipmanları, Fitness ve Kondisyon Ekipmanları, Pilates Topu, Dumble
 "
         id="hpsbrdk10"
       >
-        Koşu bandı, Kondisyon Bisikleti, Spor & Kardiyo Aletleri, Fitness
-        Kondisyon Aletleri, Vücut Geliştirme Aletleri, Vücut Geliştirme
-        Ekipmanları, Fitness ve Kondisyon Ekipmanları, Pilates Topu, Dumble
+        
       </option>
       <option
         value="Bisiklet ve Bisiklet Aksesuarları,Kaykay/Paten, Elektrikli Scooterlar
 "
         id="hpsbrdk11"
       >
-        Bisiklet ve Bisiklet Aksesuarları,Kaykay/Paten, Elektrikli Scooterlar
+        
       </option>
       <option
         value="Futbol, Basketbol, Tenis, Yüzme, Atletizm, Binicilik, Voleybol, Diğer Spor Branşları
 "
         id="hpsbrdk12"
       >
-        Futbol, Basketbol, Tenis, Yüzme, Atletizm, Binicilik, Voleybol, Diğer
-        Spor Branşları
+        
       </option>
       <option
         value="Taraftar Ürünleri (Giyim, Aksesuar, Hediyelik)
 "
         id="hpsbrdk13"
       >
-        Taraftar Ürünleri (Giyim, Aksesuar, Hediyelik)
+        
       </option>
       <option
         value="Android Telefonlar, Iphone, Cep Telefonları
 "
         id="hpsbrdk14"
       >
-        Android Telefonlar, Iphone, Cep Telefonları
+        
       </option>
       <option
         value="Tabletler, Ipad, Galaxy Tab
 "
         id="hpsbrdk15"
       >
-        Tabletler, Ipad, Galaxy Tab
+        
       </option>
       <option
         value="Taşınabilir Bilgisayar, Monitör PC (All-in-One), Mini PC
 "
         id="hpsbrdk16"
       >
-        Taşınabilir Bilgisayar, Monitör PC (All-in-One), Mini PC
+        
       </option>
       <option
         value="Masaüstü Bilgisayar, Bilgisayar Kasaları,LCD Monitör, Ekran Kartı,İşlemciler, Veri Depolama, SSD, Ram, Anakart, Power Supply,UPS, Soğutucular, TV Kartları, Optik Sürücü, Ses Kartı, Disk, Server
 "
         id="hpsbrdk17"
       >
-        Masaüstü Bilgisayar, Bilgisayar Kasaları,LCD Monitör, Ekran
-        Kartı,İşlemciler, Veri Depolama, SSD, Ram, Anakart, Power Supply,UPS,
-        Soğutucular, TV Kartları, Optik Sürücü, Ses Kartı, Disk, Server
+        
       </option>
       <option
         value="Yazıcılar, Yazıcı Yedek Parça & Aksesuarları, Yazıcı Sarf Malzemeleri, Kartuş, Toner Drumler, Fotokopi ve Baskı Kağıtları
 "
         id="hpsbrdk18"
       >
-        Yazıcılar, Yazıcı Yedek Parça & Aksesuarları, Yazıcı Sarf Malzemeleri,
-        Kartuş, Toner Drumler, Fotokopi ve Baskı Kağıtları
+        
       </option>
       <option
         value="Taşınabilir Diskler, Mouse, Klavye, Disk, Sarf Malzemeleri,Kablolar, Bilgisayar (Diğer)
 "
         id="hpsbrdk19"
       >
-        Taşınabilir Diskler, Mouse, Klavye, Disk, Sarf Malzemeleri,Kablolar,
-        Bilgisayar (Diğer)
+        
       </option>
       <option
         value="Projeksiyon Cihazları & Aksesuarları
 "
         id="hpsbrdk20"
       >
-        Projeksiyon Cihazları & Aksesuarları
+        
       </option>
       <option
         value="Modemler, Network Aksesuarları, Wireless Adaptör"
         id="hpsbrdk21"
       >
-        Modemler, Network Aksesuarları, Wireless Adaptör
+        
       </option>
       <option
         value="Yazılım, Online Lisans, Antivirüs, Microsoft Yazılımlar, Office Yazılımları, Ticari Yazılımlar
 "
         id="hpsbrdk22"
       >
-        Yazılım, Online Lisans, Antivirüs, Microsoft Yazılımlar, Office
-        Yazılımları, Ticari Yazılımlar
+        
       </option>
       <option
         value="Aynasız SLR Fotoğraf Makineleri
 "
         id="hpsbrdk23"
       >
-        Aynasız SLR Fotoğraf Makineleri
+        
       </option>
       <option
         value="SLR Dijital Fotoğraf Makinası, Dijital Fotoğraf Makinası, Filmli Fotoğraf Makineleri, Video Kameralar, Aksiyon Kameralar, Lensler, Fotoğraf Çerçeveleri, Fotoğraf Filmi & Kağıtları, Fotoğraf ve Kamera Aksesuarları, Objektifler, Filtreler, Pil ve Şarj Cihazları, SLR Lensleri, Tripod, Taşıma Çantaları, Sualtı Kılıfları, Foto-Kamera (Diğer)
 "
         id="hpsbrdk24"
       >
-        SLR Dijital Fotoğraf Makinası, Dijital Fotoğraf Makinası, Filmli
-        Fotoğraf Makineleri, Video Kameralar, Aksiyon Kameralar, Lensler,
-        Fotoğraf Çerçeveleri, Fotoğraf Filmi & Kağıtları, Fotoğraf ve Kamera
-        Aksesuarları, Objektifler, Filtreler, Pil ve Şarj Cihazları, SLR
-        Lensleri, Tripod, Taşıma Çantaları, Sualtı Kılıfları, Foto-Kamera
-        (Diğer)
+        
       </option>
       <option
         value="Drone, Multikopter, Drone Aksesuarları, Taşıma Çantası, Drone Yedek Parçaları
 "
         id="hpsbrdk25"
       >
-        Drone, Multikopter, Drone Aksesuarları, Taşıma Çantası, Drone Yedek
-        Parçaları
+        
       </option>
       <option
         value="Akü ve Akü Takviye Kabloları, Elektrikli Araçlar, Şarj Cihazları, Oto Ses Görüntü Sistemleri, Cd-Mp3 Çalar, Transmitter
 "
         id="hpsbrdk26"
       >
-        Akü ve Akü Takviye Kabloları, Elektrikli Araçlar, Şarj Cihazları, Oto
-        Ses Görüntü Sistemleri, Cd-Mp3 Çalar, Transmitter
+        
       </option>
       <option
         value="Anahtarlıklar, Araç İçi Aksesuarları, Koltuk Kılıfları, Koltuk Minderleri, Oto Buzdolapları, Oto Elektrik, Oto Kokuları,Paspaslar, Seyehat Ürünleri, Trafik Setleri, Yangın Söndürücüler, Oto Aksesuar (Diğer)
 "
         id="hpsbrdk27"
       >
-        Anahtarlıklar, Araç İçi Aksesuarları, Koltuk Kılıfları, Koltuk
-        Minderleri, Oto Buzdolapları, Oto Elektrik, Oto Kokuları,Paspaslar,
-        Seyehat Ürünleri, Trafik Setleri, Yangın Söndürücüler, Oto Aksesuar
-        (Diğer)
+        
       </option>
       <option
         value="Araç Bakım Temizlik Ürünleri, Araç Dış Aksesuar, Aydınlatma Ürünleri, Brandalar, Cam ve Güneşlik Ürünleri, Kışlık Ürünler,Silecekler
 "
         id="hpsbrdk28"
       >
-        Araç Bakım Temizlik Ürünleri, Araç Dış Aksesuar, Aydınlatma Ürünleri,
-        Brandalar, Cam ve Güneşlik Ürünleri, Kışlık Ürünler,Silecekler
+        
       </option>
       <option
         value="Motosiklet Lastikleri, Oto Lastik
 "
         id="hpsbrdk29"
       >
-        Motosiklet Lastikleri, Oto Lastik
+        
       </option>
       <option
         value="Traktör Lastikleri
 "
         id="hpsbrdk30"
       >
-        Traktör Lastikleri
+        
       </option>
       <option
         value="Ateşleme sistemi, Yürüyen aksam, Kaporta, Filtre, Elektrik aksam,Debriyaj, Mekanik aksam, Motor aksamı, Ayna, İş makinesi&Traktör yedek parçaları
 "
         id="hpsbrdk31"
       >
-        Ateşleme sistemi, Yürüyen aksam, Kaporta, Filtre, Elektrik
-        aksam,Debriyaj, Mekanik aksam, Motor aksamı, Ayna, İş makinesi&Traktör
-        yedek parçaları
+        
       </option>
       <option
         value="Süpürgeler, Ütüler, Halı Yıkama Makinası, Buharlı Temizlik Makinesi, Sulu Süpürge
 "
         id="hpsbrdk32"
       >
-        Süpürgeler, Ütüler, Halı Yıkama Makinası, Buharlı Temizlik Makinesi,
-        Sulu Süpürge
+        
       </option>
       <option
         value="Süpürge Aksesuarları, Elektrikli Mutfak Aleti Yedek Parça, Dikiş Makinesi Aksesuarları
 "
         id="hpsbrdk33"
       >
-        Süpürge Aksesuarları, Elektrikli Mutfak Aleti Yedek Parça, Dikiş
-        Makinesi Aksesuarları
+        
       </option>
       <option
         value="Blender, Çay Makineleri, Tost Makinesi, Kahve Makineleri ve Aksesuarlari, Dikiş Makinaları, Endüstriyel Mutfak Ürünleri, Su Isıtıcıları, Fritözler, Meyve Sıkıcılar, Mini-Midi Fırınlar, Basküller, Mikser, Doğrayıcı / Rondo, Elektikli Izgara-Barbekü, Mutfak Robotları, Ekmek Kızartma, Ekmek Yapma Makinesi, Kahve Öğütücü, Mutfak Tartıları, Kıyma Makineleri, Elektrikli Tencere/Tavalar, Elektrikli Mutfak Aleti Yedek Parça & Aksesuar\ Hava Temizleme & Nemlendirme Cihazları
 "
         id="hpsbrdk34"
       >
-        Blender, Çay Makineleri, Tost Makinesi, Kahve Makineleri ve
-        Aksesuarlari, Dikiş Makinaları, Endüstriyel Mutfak Ürünleri, Su
-        Isıtıcıları, Fritözler, Meyve Sıkıcılar, Mini-Midi Fırınlar, Basküller,
-        Mikser, Doğrayıcı / Rondo, Elektikli Izgara-Barbekü, Mutfak Robotları,
-        Ekmek Kızartma, Ekmek Yapma Makinesi, Kahve Öğütücü, Mutfak Tartıları,
-        Kıyma Makineleri, Elektrikli Tencere/Tavalar, Elektrikli Mutfak Aleti
-        Yedek Parça & Aksesuar\ Hava Temizleme & Nemlendirme Cihazları
+        
       </option>
       <option
         value="Saç Sakal Düzeltme Makineleri, Tıraş Makineleri, Epilatörler, Saç Kurutma Makineleri, Tıraş Makinesi Yedek Parçaları, Kişisel Bakım Aletleri (Diğer)
 "
         id="hpsbrdk35"
       >
-        Saç Sakal Düzeltme Makineleri, Tıraş Makineleri, Epilatörler, Saç
-        Kurutma Makineleri, Tıraş Makinesi Yedek Parçaları, Kişisel Bakım
-        Aletleri (Diğer)
+        
       </option>
       <option
         value="Bulaşık Makinesi, Buzdolabı, Çamaşır Makinesi, Derin Dondurucu,Kurutma Makinesi
 "
         id="hpsbrdk36"
-      >
-        Bulaşık Makinesi, Buzdolabı, Çamaşır Makinesi, Derin Dondurucu,Kurutma
-        Makinesi
+      >      
       </option>
       <option
         value="Klima, Hava Perdeleri, Kombiler, Portatif Soğutucular, Sobalar & Isıtıcılar, Şofbenler, Termoboyler, Termosifonlar, Vantilatörler,Isıtma Soğutma (Diğer)
 "
         id="hpsbrdk37"
       >
-        Klima, Hava Perdeleri, Kombiler, Portatif Soğutucular, Sobalar &
-        Isıtıcılar, Şofbenler, Termoboyler, Termosifonlar, Vantilatörler,Isıtma
-        Soğutma (Diğer)
       </option>
       <option
         value="Ankastre Setler, Aspiratör, Davlumbaz, Fırınlar, Mikrodalga Fırın,Ocaklar, Su Sebili, Ev Gereçleri
 "
         id="hpsbrdk38"
       >
-        Ankastre Setler, Aspiratör, Davlumbaz, Fırınlar, Mikrodalga
-        Fırın,Ocaklar, Su Sebili, Ev Gereçleri
       </option>
       <option
         value="Beyaz Eşya Yedek Parça & Aksesuar, Ek Güvence Paketleri
 "
         id="hpsbrdk39"
       >
-        Beyaz Eşya Yedek Parça & Aksesuar, Ek Güvence Paketleri
       </option>
       <option
         value="LCD Televizyon, LED Televizyon, Smart TV
 "
         id="hpsbrdk40"
       >
-        LCD Televizyon, LED Televizyon, Smart TV
       </option>
       <option
         value="Anne Bakım Ürünleri, Bebek Bakım Ürünleri, Islak Mendiller, Bebek Bezleri,Bebek Odası Takımları, Beşikler,Yataklar,Oyun parkları, Oyun Halı&Matı, Bebek Arabası, Oto Koltuğu
 "
         id="hpsbrdk41"
       >
-        Anne Bakım Ürünleri, Bebek Bakım Ürünleri, Islak Mendiller, Bebek
-        Bezleri,Bebek Odası Takımları, Beşikler,Yataklar,Oyun parkları, Oyun
-        Halı&Matı, Bebek Arabası, Oto Koltuğu
       </option>
       <option
         value="Cilt Bakımı, Güneş Ürünleri, Saç Bakım Ürünleri
 "
         id="hpsbrdk42"
       >
-        Cilt Bakımı, Güneş Ürünleri, Saç Bakım Ürünleri
       </option>
       <option
         value="Oje, Ruj, Eyeliner, Rimel, Fondoten, Pudra, Allık, Highlighter, Far ve Far Paletleri, Makyaj Temizleme Ürünleri, Maskara
 "
         id="hpsbrdk43"
       >
-        Oje, Ruj, Eyeliner, Rimel, Fondoten, Pudra, Allık, Highlighter, Far ve
-        Far Paletleri, Makyaj Temizleme Ürünleri, Maskara
       </option>
       <option
         value="Kedi Maması, Köpek Maması, Yem, Bisküvi, Kraker, Ödül, Vitamin
 "
         id="hpsbrdk44"
       >
-        Kedi Maması, Köpek Maması, Yem, Bisküvi, Kraker, Ödül, Vitamin
       </option>
       <option
         value="Kedi Kumu, Kedi Bakım Ürünleri, Kedi Tuvalet Kabı ve Aksesuarları, Tırmalama Tahtası, Balık, Tuzlu Su Akvaryum Malzemeleri, Akvaryum Filtreleri, Hamster Ürünleri, Tavşan Ürünleri, Kaplumbağa Ürünleri, Diğer Petshop Ürünleri
 "
         id="hpsbrdk45"
       >
-        Kedi Kumu, Kedi Bakım Ürünleri, Kedi Tuvalet Kabı ve Aksesuarları,
-        Tırmalama Tahtası, Balık, Tuzlu Su Akvaryum Malzemeleri, Akvaryum
-        Filtreleri, Hamster Ürünleri, Tavşan Ürünleri, Kaplumbağa Ürünleri,
-        Diğer Petshop Ürünleri
       </option>
       <option
         value="Diş Fırçaları, Diş İpleri, Gargara, Diş Macunu
 "
         id="hpsbrdk46"
       >
-        Diş Fırçaları, Diş İpleri, Gargara, Diş Macunu
       </option>
       <option
         value="Sağlık Ürünleri, Aile Planlaması Ürünleri, Yetişkin Ürünler +18, Besin Takviyeleri, Duş ve Banyo Ürünleri, Deodorant, Medikal Ürünler, Kadın Pedleri & Hijyen Ürünleri, Sporcu Besinleri
 "
         id="hpsbrdk47"
       >
-        Sağlık Ürünleri, Aile Planlaması Ürünleri, Yetişkin Ürünler +18, Besin
-        Takviyeleri, Duş ve Banyo Ürünleri, Deodorant, Medikal Ürünler, Kadın
-        Pedleri & Hijyen Ürünleri, Sporcu Besinleri
       </option>
       <option
         value="Güzellik Salonu & Kuaför Ürünleri, Ayak & Tırnak Bakımı, Tıraş, Ağda ve Epilasyon, Erkek Tıraş Ürünleri
 "
         id="hpsbrdk48"
       >
-        Güzellik Salonu & Kuaför Ürünleri, Ayak & Tırnak Bakımı, Tıraş, Ağda ve
-        Epilasyon, Erkek Tıraş Ürünleri
       </option>
       <option
         value="Yüzey Temizleyiciler, Bulaşık Deterjanları, Çamaşır Deterjanları & Kapsülleri, Yumuşatıcı, Leke Çıkarıcı, Toz Deterjan, Sıvı Deterjan
 "
         id="hpsbrdk49"
-      >
-        Yüzey Temizleyiciler, Bulaşık Deterjanları, Çamaşır Deterjanları &
-        Kapsülleri, Yumuşatıcı, Leke Çıkarıcı, Toz Deterjan, Sıvı Deterjan
-      </option>
+      >     </option>
       <option
         value="Peçete, Kağıt Havlu, Tuvalet Kağıdı, Kullan At Ürünler
 "
         id="hpsbrdk50"
       >
-        Peçete, Kağıt Havlu, Tuvalet Kağıdı, Kullan At Ürünler
       </option>
       <option
         value="Çay, Kahve, Gazlı İçecekler, Şuruplar, Soslar, Hazır Yemek, Konserve, Bisküvi, Kraker, Beslenme Diyet Ürünler
 "
         id="hpsbrdk51"
       >
-        Çay, Kahve, Gazlı İçecekler, Şuruplar, Soslar, Hazır Yemek, Konserve,
-        Bisküvi, Kraker, Beslenme Diyet Ürünler
       </option>
       <option
         value="Kovan Dezenfektan Pompası, Arıcı Maskesi, Arıcı Tulumu, Körük, Arı Kapanı, Arıcı Eldiveni, Bal Tenekesi
 "
         id="hpsbrdk52"
       >
-        Kovan Dezenfektan Pompası, Arıcı Maskesi, Arıcı Tulumu, Körük, Arı
-        Kapanı, Arıcı Eldiveni, Bal Tenekesi
       </option>
       <option
         value="Bahçe Dekorasyonu, Bahçe Kovucular, Çiçek Bakımı & Bitki Yetiştirme, Havuz Ürünleri
 "
         id="hpsbrdk53"
       >
-        Bahçe Dekorasyonu, Bahçe Kovucular, Çiçek Bakımı & Bitki Yetiştirme,
-        Havuz Ürünleri
       </option>
       <option
         value="Bahçe Makineleri, Havuz Ürünleri, Küçük El Aletleri, Elektrikli El Aletleri, Manuel El Aletleri
 "
         id="hpsbrdk54"
       >
-        Bahçe Makineleri, Havuz Ürünleri, Küçük El Aletleri, Elektrikli El
-        Aletleri, Manuel El Aletleri
       </option>
       <option
         value="Bahçe Masası, Bahçe Sandalyesi, Bahçe Salıncağı, Bahçe Oturma Grubu, Puf, Minder, Şezlong, Hamak
 "
         id="hpsbrdk55"
       >
-        Bahçe Masası, Bahçe Sandalyesi, Bahçe Salıncağı, Bahçe Oturma Grubu,
-        Puf, Minder, Şezlong, Hamak
       </option>
       <option
         value="Bungalov Ev,  Ahşap Çocuk Oyun Evi
 "
         id="hpsbrdk56"
       >
-        Bungalov Ev,  Ahşap Çocuk Oyun Evi
       </option>
       <option
         value="Mangal / Barbekü, Mangal Aksesuarları, Piknik Seti
 "
         id="hpsbrdk57"
       >
-        Mangal / Barbekü, Mangal Aksesuarları, Piknik Seti
       </option>
       <option
         value="Banyo Yapı Malzemeleri, Elektrikli El Aletleri ve Aksesuarları, Güvenlik Ürünleri, Hırdavat, İnşaat Malzemeleri, Küçük El Aletleri, Elektrikli El Aletleri, Manuel El Aletleri
 "
         id="hpsbrdk58"
       >
-        Banyo Yapı Malzemeleri, Elektrikli El Aletleri ve Aksesuarları, Güvenlik
-        Ürünleri, Hırdavat, İnşaat Malzemeleri, Küçük El Aletleri, Elektrikli El
-        Aletleri, Manuel El Aletleri
       </option>
       <option
         value="Elektrik ve aydınlatma ürünleri, Plafoyerler, Abarjurlar, Avizeler,Sarkıt Avizeler, Aplikler, Lambaderler, Masa Lambaları, Gece Lambaları, Dekoratif Aydınlatmalar, Yılbaşı Aydınlatmaları, Çocuk Odası Aydınlatmaları"
         id="hpsbrdk59"
       >
-        Elektrik ve aydınlatma ürünleri, Plafoyerler, Abarjurlar,
-        Avizeler,Sarkıt Avizeler, Aplikler, Lambaderler, Masa Lambaları, Gece
-        Lambaları, Dekoratif Aydınlatmalar, Yılbaşı Aydınlatmaları, Çocuk Odası
-        Aydınlatmaları
       </option>
       <option
         value="Benzinli ve Dizel Jeneratörler
 "
         id="hpsbrdk60"
       >
-        Benzinli ve Dizel Jeneratörler
       </option>
       <option
         value="Yataklar, Perdeler, Nevresim Takımları, Yastıklar, Yorganlar, Yatak Örtüleri, Pike Takımları, Alez, Battaniyeler, Koltuk Örtüleri, Uyku Setleri, Çarşaf ve Yastık Kılıfı, Dekoratif Kırtlentler,
 "
         id="hpsbrdk61"
       >
-        Yataklar, Perdeler, Nevresim Takımları, Yastıklar, Yorganlar, Yatak
-        Örtüleri, Pike Takımları, Alez, Battaniyeler, Koltuk Örtüleri, Uyku
-        Setleri, Çarşaf ve Yastık Kılıfı, Dekoratif Kırtlentler,
       </option>
       <option
         value="Halı, Kilim, Yer Paspasları, Yolluklar
 "
         id="hpsbrdk62"
       >
-        Halı, Kilim, Yer Paspasları, Yolluklar
       </option>
       <option
         value="Bornoz Setleri, Banyo Klozet Takımları, Havlular
 "
         id="hpsbrdk63"
       >
-        Bornoz Setleri, Banyo Klozet Takımları, Havlular
       </option>
       <option
         value="Mutfak Tekstili, Masa Örtüleri, Fırın Eldivenleri, Runner
 "
         id="hpsbrdk64"
       >
-        Mutfak Tekstili, Masa Örtüleri, Fırın Eldivenleri, Runner
       </option>
       <option
         value="Dekorasyon, Tekstil Saklama Ürünleri
 "
         id="hpsbrdk65"
       >
-        Dekorasyon, Tekstil Saklama Ürünleri
       </option>
       <option
         value="Ofis Masası, Ofis Sandalyesi, Bekleme Koltukları, Ofis Çöp Kovası,Dosya Dolapları
 "
         id="hpsbrdk66"
       >
-        Ofis Masası, Ofis Sandalyesi, Bekleme Koltukları, Ofis Çöp Kovası,Dosya
-        Dolapları
       </option>
       <option
         value="Mobilya, Sandalyeler, Koltuklar, Tabureler
 "
         id="hpsbrdk67"
       >
-        Mobilya, Sandalyeler, Koltuklar, Tabureler
       </option>
       <option
         value="Yatak Odası Takımları, Genç Odası Takımları
 "
         id="hpsbrdk68"
       >
-        Yatak Odası Takımları, Genç Odası Takımları
       </option>
       <option
         value="Sofra Mutfak  Gereçleri, Tencereler, Tavalar, Düdüklü Tencelere, Ev Gereçleri, Yemek Takımı, Cam Ürünleri, Porselenler, Çatal / Katış / Bıçak Takımları, Çaydanlık & Cezveler, Servis Tabakları,Pratik Ev Gereçleri
 "
         id="hpsbrdk69"
       >
-        Sofra Mutfak  Gereçleri, Tencereler, Tavalar, Düdüklü Tencelere, Ev
-        Gereçleri, Yemek Takımı, Cam Ürünleri, Porselenler, Çatal / Katış /
-        Bıçak Takımları, Çaydanlık & Cezveler, Servis Tabakları,Pratik Ev
-        Gereçleri
       </option>
       <option
         value="Bebekler, Akülü Araçlar, Araba, Müzik Kutuları, Pedallı Araçlar, Oyun Hamurları, Ahşap Oyuncaklar, Bebek Oyuncakları, Çocuk Bisikletleri, Çocuk Scooterları
 "
         id="hpsbrdk70"
       >
-        Bebekler, Akülü Araçlar, Araba, Müzik Kutuları, Pedallı Araçlar, Oyun
-        Hamurları, Ahşap Oyuncaklar, Bebek Oyuncakları, Çocuk Bisikletleri,
-        Çocuk Scooterları
       </option>
       <option
         value="Araç içi Telefon Tutucular, Bluetooth Araç Kiti, Powerbank, Şarj Cihazları & Kabloları,  Bluetooth Kulaklıklar
 "
         id="hpsbrdk71"
       >
-        Araç içi Telefon Tutucular, Bluetooth Araç Kiti, Powerbank, Şarj
-        Cihazları & Kabloları,  Bluetooth Kulaklıklar
       </option>
       <option
         value="Kapak & Kılıf, Ekran Koruyucu Film,  Oyun Aksesuarları,  Selfie Çubuğu, Kablolar, Multimedya Ürünleri, Diğer Aksesuarlar
 "
         id="hpsbrdk72"
       >
-        Kapak & Kılıf, Ekran Koruyucu Film,  Oyun Aksesuarları,  Selfie Çubuğu,
-        Kablolar, Multimedya Ürünleri, Diğer Aksesuarlar
       </option>
       <option
         value="Cep tel kulaklık, Kulaklık, Bluetooth Kulaklık, Kulaklık Aksesuarları
 "
         id="hpsbrdk73"
       >
-        Cep tel kulaklık, Kulaklık, Bluetooth Kulaklık, Kulaklık Aksesuarları
       </option>
       <option
         value="Notebook Aksesuarları, Tablet Aksesuarları, Notebook Çantası, Data Kabloları
 "
         id="hpsbrdk74"
       >
-        Notebook Aksesuarları, Tablet Aksesuarları, Notebook Çantası, Data
-        Kabloları
       </option>
       <option
         value="Batarya, Ekran, Kamera, Telefon Kasası, Tuş Takımı, Ahize
 "
         id="hpsbrdk75"
       >
-        Batarya, Ekran, Kamera, Telefon Kasası, Tuş Takımı, Ahize
       </option>
       <option
         value="Giyilebilir Teknoloji, Akıllı Saatler, Akıllı Bileklikler, Sanal Gerçeklik Gözlüğü, Giyilebilir Teknoloji Aksesuarları
 "
         id="hpsbrdk76"
       >
-        Giyilebilir Teknoloji, Akıllı Saatler, Akıllı Bileklikler, Sanal
-        Gerçeklik Gözlüğü, Giyilebilir Teknoloji Aksesuarları
       </option>
       <option
         value="Telsiz Telefonlar, Masaüstü Telefonlar, Konferans Telefonları,Lisanssız Telsizler
 "
         id="hpsbrdk77"
       >
-        Telsiz Telefonlar, Masaüstü Telefonlar, Konferans Telefonları,Lisanssız
-        Telsizler
       </option>
       <option
         value="Film, Sinema Bileti, Poster
 "
         id="hpsbrdk78"
       >
-        Film, Sinema Bileti, Poster
       </option>
       <option
         value="Edebiyat, Eğitim, Akademik Kitaplar, Hobi Kitapları, Çocuk Kitapları, Kitap Ayraçları, E-Kitap, Online Eğitim, Ön Ödemeli Kartlar
 "
         id="hpsbrdk79"
       >
-        Edebiyat, Eğitim, Akademik Kitaplar, Hobi Kitapları, Çocuk Kitapları,
-        Kitap Ayraçları, E-Kitap, Online Eğitim, Ön Ödemeli Kartlar
       </option>
       <option
         value="Amfi, Bateriler, Davullar, Kabin, Hoparlör, Monitör, Kayıt Teknolojileri, Kulaklık, Mikrofon, Mixer, Akordiyonlar, Stüdyo & DJ Ekipmanları, Pikap, Plak, Telli Çalgılar, Orglar, Piyanolar,Gitarlar, Müzik (Diğer)
 "
         id="hpsbrdk80"
       >
-        Amfi, Bateriler, Davullar, Kabin, Hoparlör, Monitör, Kayıt
-        Teknolojileri, Kulaklık, Mikrofon, Mixer, Akordiyonlar, Stüdyo & DJ
-        Ekipmanları, Pikap, Plak, Telli Çalgılar, Orglar, Piyanolar,Gitarlar,
-        Müzik (Diğer)
       </option>
       <option
         value="Albüm, Işık Sistemleri, Müzik Ekipmanları – Aksesuarları, Müzikal Hediyelikler, Nefesli Çalgılar, Vurmalı Çalgılar – Perküsyon, Yaylı Çalgılar
 "
         id="hpsbrdk81"
       >
-        Albüm, Işık Sistemleri, Müzik Ekipmanları – Aksesuarları, Müzikal
-        Hediyelikler, Nefesli Çalgılar, Vurmalı Çalgılar – Perküsyon, Yaylı
-        Çalgılar
       </option>
       <option
         value="Ofis Makineleri, Yazar Kasa POS
 "
         id="hpsbrdk82"
       >
-        Ofis Makineleri, Yazar Kasa POS
       </option>
       <option
         value="Fotokopi Kağıtları, A4 Kağıtlar, A3 Kağıtlar
 "
         id="hpsbrdk83"
       >
-        Fotokopi Kağıtları, A4 Kağıtlar, A3 Kağıtlar
       </option>
       <option
         value="Kalem ve Yazı Ürünleri, Kırtasiye Ürünleri, Dosyalar, Ayraçlar, Sanatsal Malzemeler, Akrilik Boya, Yağlı Boya, Tuvaller, Resim Kalemleri
 "
         id="hpsbrdk84"
       >
-        Kalem ve Yazı Ürünleri, Kırtasiye Ürünleri, Dosyalar, Ayraçlar, Sanatsal
-        Malzemeler, Akrilik Boya, Yağlı Boya, Tuvaller, Resim Kalemleri
       </option>
       <option
         value="PS4 Konsol, PS3 Konsol, Xbox 360 Konsol, Xbox One Konsol, Nintendo Konsol, Diğer Konsollar
 "
         id="hpsbrdk85"
       >
-        PS4 Konsol, PS3 Konsol, Xbox 360 Konsol, Xbox One Konsol, Nintendo
-        Konsol, Diğer Konsollar
       </option>
       <option
         value="PS4 Oyunları, PS3 Oyunları, Xbox 360 Oyunları, Xbox One Oyunları, Nintendo Oyunları,Bilgisayar Oyunları, PSP Oyunları, Diğer Oyunlar
 "
         id="hpsbrdk86"
       >
-        PS4 Oyunları, PS3 Oyunları, Xbox 360 Oyunları, Xbox One Oyunları,
-        Nintendo Oyunları,Bilgisayar Oyunları, PSP Oyunları, Diğer Oyunlar
       </option>
       <option
         value="PS4 Aksesuarlar, Playstation 4 VR, PS3 Aksesuarlar, Xbox 360 Aksesuarları, Xbox One Aksesuarları, Nintendo Aksesuarları, PSP Aksesuarları, PS2 Aksesuarlar, PC Oyun Aksesuar, Simülasyon Aksesuarları
 "
         id="hpsbrdk87"
       >
-        PS4 Aksesuarlar, Playstation 4 VR, PS3 Aksesuarlar, Xbox 360
-        Aksesuarları, Xbox One Aksesuarları, Nintendo Aksesuarları, PSP
-        Aksesuarları, PS2 Aksesuarlar, PC Oyun Aksesuar, Simülasyon Aksesuarları
       </option>
       <option
         value="Dijital Oyun Kartları, Oyun Ödeme Kartları, Dijital Bilgisayar Oyunları, Dijital Konsol Oyunları
 "
         id="hpsbrdk88"
       >
-        Dijital Oyun Kartları, Oyun Ödeme Kartları, Dijital Bilgisayar Oyunları,
-        Dijital Konsol Oyunları
       </option>
       <option
         value="Hobi, Oyun Eğlence Ürünleri, Kutu Oyunları, Puzzle, Akıl Oyunları,Uzaktan Kumandalı Arabalar, İlginç Ürünler, Kostüm ve Aksesuarları, Maket, Oyun Takımları, Fırsat Menüler, Gezi & Tatil Turu
 "
         id="hpsbrdk89"
       >
-        Hobi, Oyun Eğlence Ürünleri, Kutu Oyunları, Puzzle, Akıl
-        Oyunları,Uzaktan Kumandalı Arabalar, İlginç Ürünler, Kostüm ve
-        Aksesuarları, Maket, Oyun Takımları, Fırsat Menüler, Gezi & Tatil Turu
       </option>
       <option
         value="Kablolar, Switchbox ve Çoklayıcılar, Ses ve Görüntü Kabloları, Akım Koruyucu, Temizlik Ürünleri, Kablo & Soketler, Uydu Alıcıları ve Aksesuarlari, Uzaktan Kumandalar, Alarm Saatli Radyolar, Monitör Aksesuarları, CD/DVD Aksesuarları, 3D TV gözlükleri, Ses Kayıt Cihazı, Dokunmatik Pos PC, Mikrofonlar, Dvd vcd oynatıcı, MP3 Player, CD / DVD Çantaları, Elektronik Sözlük, Kablosuz Ses ve Görüntü Aktarıcıları, HDD/CD-ROM Kutuları,Yedekleme Kartuş,Çizici (Plotter), Optik Ürünleri, Ekran Temizleme Ürünleri, Hoparlör Ayakları & Askıları, TV askı aparatları, CD/DVD Baskı Yazıcıları, TV Ekran Koruyucular
 "
         id="hpsbrdk90"
       >
-        Kablolar, Switchbox ve Çoklayıcılar, Ses ve Görüntü Kabloları, Akım
-        Koruyucu, Temizlik Ürünleri, Kablo & Soketler, Uydu Alıcıları ve
-        Aksesuarlari, Uzaktan Kumandalar, Alarm Saatli Radyolar, Monitör
-        Aksesuarları, CD/DVD Aksesuarları, 3D TV gözlükleri, Ses Kayıt Cihazı,
-        Dokunmatik Pos PC, Mikrofonlar, Dvd vcd oynatıcı, MP3 Player, CD / DVD
-        Çantaları, Elektronik Sözlük, Kablosuz Ses ve Görüntü Aktarıcıları,
-        HDD/CD-ROM Kutuları,Yedekleme Kartuş,Çizici (Plotter), Optik Ürünleri,
-        Ekran Temizleme Ürünleri, Hoparlör Ayakları & Askıları, TV askı
-        aparatları, CD/DVD Baskı Yazıcıları, TV Ekran Koruyucular
       </option>
       <option
         value="Ek Güvence Paketleri TV, Dijital Yayın Paketleri
 "
         id="hpsbrdk91"
       >
-        Ek Güvence Paketleri TV, Dijital Yayın Paketleri
       </option>
       <option
         value="Ev Sinema Sistemleri, 3D Televizyon Gözlükleri, DVD&VCD Oynatıcı, DVR Kayıt Cihazı, Kablosuz Ses ve Görüntü Aktarıcılar, Müzik Setleri, Portatif Sistemler, Stereo Amfi, Taşınabilir Amfi Hoparlör, Receiver Amfi, Soundbar, Subwoorfer, Speaker
 "
         id="hpsbrdk92"
       >
-        Ev Sinema Sistemleri, 3D Televizyon Gözlükleri, DVD&VCD Oynatıcı, DVR
-        Kayıt Cihazı, Kablosuz Ses ve Görüntü Aktarıcılar, Müzik Setleri,
-        Portatif Sistemler, Stereo Amfi, Taşınabilir Amfi Hoparlör, Receiver
-        Amfi, Soundbar, Subwoorfer, Speaker
       </option>
       <option
         value="Güvenlik Kamerası, Dedektör, Alarm Sistemleri, Alarm Sistemleri,Aksesuarları, Webcam
 "
         id="hpsbrdk93"
       >
-        Güvenlik Kamerası, Dedektör, Alarm Sistemleri, Alarm
-        Sistemleri,Aksesuarları, Webcam
       </option>
       <option
         value="Dijital Dergi,E-kitap,Etkinlik, Aktivite,Fırsat Menüleri,Online Lisans,Sinema Bileti,Spor Hizmet Online Eğitimler,Oyun Pinleri,Dijital Oyunlar
 "
         id="hpsbrdk94"
       >
-        Dijital Dergi,E-kitap,Etkinlik, Aktivite,Fırsat Menüleri,Online
-        Lisans,Sinema Bileti,Spor Hizmet Online Eğitimler,Oyun Pinleri,Dijital
-        Oyunlar
       </option>
       <option
         value="Film, Dizi, Yayın Paketleri,Gezi & Tatil Turları,Kuru Temizleme,Sesli Kitap
 "
         id="hpsbrdk95"
       >
-        Film, Dizi, Yayın Paketleri,Gezi & Tatil Turları,Kuru Temizleme,Sesli
-        Kitap
       </option>`;
   } else if (pazaryeri.value == pazaryeriN11.value) {
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // --------------------N11------------------------------
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    kategori.innerHTML = `<option
+    kategoriList.innerHTML = `<option
         value="2. El Antika & Koleksiyon
 "
         id="n11k1"
@@ -3227,7 +3026,7 @@ pazaryeri.addEventListener("click", () => {
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // -----------------ÇİÇEK SEPETİ------------------------
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    kategori.innerHTML = `<option
+    kategoriList.innerHTML = `<option
         value="Aksesuar
 "
         id="ciceksptk1"
@@ -3420,7 +3219,7 @@ pazaryeri.addEventListener("click", () => {
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // -----------------AMAZON------------------------------
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    kategori.innerHTML = `<option id="amznk1" value="Fotoğraf Makinesi">Fotoğraf Makinesi</option>
+    kategoriList.innerHTML = `<option id="amznk1" value="Fotoğraf Makinesi">Fotoğraf Makinesi</option>
       <option id="amznk2" value="Cep Telefonu">Cep Telefonu</option>
       <option id="amznk3" value="Giyim">Giyim</option>
       <option id="amznk4" value="Bilgisayar">Bilgisayar</option>
@@ -5125,13 +4924,20 @@ pazaryeri.addEventListener("click", () => {
     let KDVsiz_fiyat = satisInput.value / (1 + kdv);
     let komisyonHesaplama = KDVsiz_fiyat * komisyon;
     let netKar = KDVsiz_fiyat - alisInput.value - komisyonHesaplama;
-    sonuc.innerHTML = `<h4>Seçilen Kategori</h4>
-  <h5>${kategori.value}</h5>
-  <li>Komisyon oranı :%  ${(komisyon * 100).toFixed(1)}</li>
-  <li>Satış Fiyatı (KDV Dahil) : ${satisInput.value} TL</li>
-  <li>Satış Fiyatı (KDV Hariç) : ${KDVsiz_fiyat.toFixed(2)} TL</li>
-  <li id="kesilen">Alış Fiyatı : ${alisInput.value} TL</li>
-  <li id="kesilen">Komisyon kesintisi : ${komisyonHesaplama.toFixed(2)} TL</li>
-  <li id="kar">Net Kâr : ${netKar.toFixed(2)} TL</li>`;
+    komisyonOrani.innerHTML = `% ${(komisyon * 100).toFixed(1)}`;
+    satisKdvDahil.innerHTML = `${satisInput.value} TL`;
+    satisKdvHaric.innerHTML = `${KDVsiz_fiyat.toFixed(2)} TL`;
+    alisFiyati.innerHTML = `${alisInput.value} TL`;
+    komisyonKesinti.innerHTML = `${komisyonHesaplama.toFixed(2)} TL`;
+    netkarSonuc.innerHTML = `${netKar.toFixed(2)} TL`;
+
+    //   sonuc.innerHTML = `<h4>Seçilen Kategori</h4>
+    // <h5>${kategori.value}</h5>
+    // <li>Komisyon oranı :%  ${(komisyon * 100).toFixed(1)}</li>
+    // <li>Satış Fiyatı (KDV Dahil) : ${satisInput.value} TL</li>
+    // <li>Satış Fiyatı (KDV Hariç) : ${KDVsiz_fiyat.toFixed(2)} TL</li>
+    // <li id="kesilen">Alış Fiyatı : ${alisInput.value} TL</li>
+    // <li id="kesilen">Komisyon kesintisi : ${komisyonHesaplama.toFixed(2)} TL</li>
+    // <li id="kar">Net Kâr : ${netKar.toFixed(2)} TL</li>`;
   });
 });
