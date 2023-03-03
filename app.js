@@ -4235,12 +4235,12 @@ pazaryeri.addEventListener("click", () => {
     let komisyonHesaplama = KDVsiz_fiyat * komisyon;
     let netKar = KDVsiz_fiyat - alisInput.value - komisyonHesaplama;
     komisyonOrani.innerHTML = `% ${(komisyon * 100).toFixed(1)}`;
-    satisKdvDahil.innerHTML = `${satisInput.value} TL`;
-    satisKdvHaric.innerHTML = `${KDVsiz_fiyat.toFixed(2)} TL`;
-    alisFiyati.innerHTML = `${alisInput.value} TL`;
-    komisyonKesinti.innerHTML = `${komisyonHesaplama.toFixed(2)} TL`;
+    satisKdvDahil.innerHTML = `${satisInput.value} ₺`;
+    satisKdvHaric.innerHTML = `${KDVsiz_fiyat.toFixed(2)} ₺`;
+    alisFiyati.innerHTML = `${alisInput.value} ₺`;
+    komisyonKesinti.innerHTML = `${komisyonHesaplama.toFixed(2)} ₺`;
     if (netKar > 0) {
-      netkarSonuc.innerHTML = `<b>${netKar.toFixed(2)} TL</b>`;
+      netkarSonuc.innerHTML = `<b>${netKar.toFixed(2)} ₺</b>`;
     } else {
       netkarSonuc.innerHTML = `<b style="color: blue;">${netKar.toFixed(
         2
