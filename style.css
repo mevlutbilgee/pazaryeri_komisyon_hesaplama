@@ -91,19 +91,19 @@ input {
   }
   #pazaryeri {
     width: 400px;
-    height: 25px;
+    height: 40px;
   }
   input {
     width: 380px;
-    height: 20px;
+    height: 35px;
   }
   #kategori {
     width: 400px;
-    height: 25px;
+    height: 40px;
   }
   #btnHesaplama {
     width: 400px;
-    height: 25px;
+    height: 40px;
   }
   label {
     font-size: 0.8rem;
