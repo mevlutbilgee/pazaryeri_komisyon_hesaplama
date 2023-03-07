@@ -7,14 +7,20 @@ const pazaryeriN11 = document.getElementById("pazaryeriN11");
 const pazaryeriAmazon = document.getElementById("pazaryeriAmazon");
 const kategori = document.getElementById("kategori");
 const kategoriList = document.getElementById("kategoriList");
-const satisInput = document.getElementById("satisInput");
 const alisInput = document.getElementById("alisInput");
+const satisInput = document.getElementById("satisInput");
+const kdv0 = document.getElementById("kdv0");
+const kdv1 = document.getElementById("kdv1");
+const kdv8 = document.getElementById("kdv8");
+const kdv18 = document.getElementById("kdv18");
+const kargoInput = document.getElementById("kargoInput");
 const sonucListesi = document.getElementById("sonucListesi");
 const komisyonOrani = document.getElementById("komisyonOrani");
 const satisKdvDahil = document.getElementById("satisKdvDahil");
 const satisKdvHaric = document.getElementById("satisKdvHaric");
 const alisFiyati = document.getElementById("alisFiyati");
 const komisyonKesinti = document.getElementById("komisyonKesinti");
+const kargoTutari = document.getElementById("kargoTutari");
 const netkarSonuc = document.getElementById("netkarSonuc");
 // console.log(k2.textContent);
 // console.log(kategori.textContent);
@@ -2563,6 +2569,20 @@ pazaryeri.addEventListener("click", () => {
       </option>`;
   }
   let komisyon = "";
+  let kdv = 0.18;
+  kdv0.addEventListener("click", () => {
+    kdv = 0;
+  });
+  kdv1.addEventListener("click", () => {
+    kdv = 0.01;
+  });
+  kdv8.addEventListener("click", () => {
+    kdv = 0.08;
+    console.log(kdv);
+  });
+  kdv18.addEventListener("click", () => {
+    kdv = 0.18;
+  });
   btnHesaplama.addEventListener("click", () => {
     const k1 = document.getElementById("1");
     const k2 = document.getElementById("2");
@@ -4228,17 +4248,18 @@ pazaryeri.addEventListener("click", () => {
         komisyon = 0.1;
       }
     }
-    // console.log(komisyon);
-    // console.log(satisInput.value);
-    let kdv = 0.18;
+
     let KDVsiz_fiyat = satisInput.value / (1 + kdv);
     let komisyonHesaplama = KDVsiz_fiyat * komisyon;
-    let netKar = KDVsiz_fiyat - alisInput.value - komisyonHesaplama;
+    let kargoHesaplama = kargoInput.value / 1.18;
+    let netKar =
+      KDVsiz_fiyat - alisInput.value - komisyonHesaplama - kargoHesaplama;
     komisyonOrani.innerHTML = `% ${(komisyon * 100).toFixed(1)}`;
     satisKdvDahil.innerHTML = `${satisInput.value} ₺`;
     satisKdvHaric.innerHTML = `${KDVsiz_fiyat.toFixed(2)} ₺`;
     alisFiyati.innerHTML = `${alisInput.value} ₺`;
     komisyonKesinti.innerHTML = `${komisyonHesaplama.toFixed(2)} ₺`;
+    kargoTutari.innerHTML = `${kargoHesaplama.toFixed(2)}`;
     if (netKar > 0) {
       netkarSonuc.innerHTML = `<b>${netKar.toFixed(2)} ₺</b>`;
     } else {

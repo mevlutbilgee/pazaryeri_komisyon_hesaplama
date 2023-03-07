@@ -17,7 +17,7 @@ label {
   color: black;
   background-color: white;
   width: 750px;
-  height: 400px;
+  height: 450px;
   margin: auto;
   padding-bottom: 5px;
   border-radius: 10px;
@@ -54,6 +54,20 @@ input {
   border-radius: 5px;
   padding-left: 15px;
 }
+.kdvbtn {
+  width: 184px;
+  height: 50px;
+  font-size: larger;
+  background-color: #3a86ff;
+  border-color: #3a86ff;
+  color: white;
+  cursor: pointer;
+}
+.kdvbtn:hover {
+  background-color: white;
+  color: #3a86ff;
+  transition: 1s;
+}
 #btnHesaplama {
   width: 750px;
   height: 50px;
@@ -74,6 +88,9 @@ input {
   color: red;
 }
 #alisFiyati {
+  color: red;
+}
+#kargoTutari {
   color: red;
 }
 /* Responsive */
@@ -100,6 +117,11 @@ input {
   #kategori {
     width: 400px;
     height: 40px;
+  }
+  .kdvbtn {
+    width: 93px;
+    height: 30px;
+    font-size: small;
   }
   #btnHesaplama {
     width: 400px;

@@ -39,13 +39,25 @@
     <!-- <select name="kategori" id="kategori" ></select>  -->
     <!-- </select> -->
     <br /><br /><br />
+    <label for="alisInput">Alış Fiyatı (KDV dahil)</label>
+    <br />
+    <input type="number" id="alisInput" placeholder="₺" />
+    <br /><br /><br />
     <label for="satisInput">Satış Fiyatı (KDV dahil)</label>
     <br />
     <input type="number" id="satisInput" placeholder="₺" />
     <br /><br /><br />
-    <label for="alisInput">Alış Fiyatı (KDV dahil)</label>
+    <label for="">KDV miktarı</label>
     <br />
-    <input type="number" id="alisInput" placeholder="₺" />
+    <button class="kdvbtn" id="kdv0">0</button>
+    <button class="kdvbtn" id="kdv1">1</button>
+    <button class="kdvbtn" id="kdv8">8</button>
+    <button class="kdvbtn" id="kdv18">18</button>
+    <br /><br /><br />
+
+    <label for="">Kargo Ücreti (KDV dahil)</label>
+    <br />
+    <input type="number" id="kargoInput" placeholder="₺" />
     <br /><br />
     <button id="btnHesaplama">Hesapla</button>
     <br /><br />
@@ -70,6 +82,10 @@
       <div class="box">
         <p class="text">Komisyon kesintisi :</p>
         <p class="sonuc" id="komisyonKesinti"></p>
+      </div>
+      <div class="box">
+        <p class="text">Kargo Tutarı :</p>
+        <p class="sonuc" id="kargoTutari"></p>
       </div>
       <div class="box">
         <p class="text">Net Kâr :</p>
