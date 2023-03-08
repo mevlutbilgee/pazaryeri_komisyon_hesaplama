@@ -130,4 +130,7 @@ input {
   label {
     font-size: 0.8rem;
   }
+  #kdvBox {
+    font-size: 0.65rem;
+  }
 }
