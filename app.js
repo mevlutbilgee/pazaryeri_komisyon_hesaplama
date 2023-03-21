@@ -2569,1707 +2569,1707 @@ pazaryeri.addEventListener("click", () => {
         Ayakkabılar, Kol Çantaları ve Ayakkabı Aksesuarları
       </option>`;
   }
-  let komisyon = "";
-  let kdv = 0.18;
-  kdv0.addEventListener("click", () => {
-    kdv = 0;
-    kdvBox.innerHTML = `% ${(kdv * 100).toFixed(1)}`;
-  });
-  kdv1.addEventListener("click", () => {
-    kdv = 0.01;
-    kdvBox.innerHTML = `% ${(kdv * 100).toFixed(1)}`;
-  });
-  kdv8.addEventListener("click", () => {
-    kdv = 0.08;
-    kdvBox.innerHTML = `% ${(kdv * 100).toFixed(1)}`;
-  });
-  kdv18.addEventListener("click", () => {
-    kdv = 0.18;
-    kdvBox.innerHTML = `% ${(kdv * 100).toFixed(1)}`;
-  });
-  btnHesaplama.addEventListener("click", () => {
-    const k1 = document.getElementById("1");
-    const k2 = document.getElementById("2");
-    const k3 = document.getElementById("3");
-    const k4 = document.getElementById("4");
-    const k5 = document.getElementById("5");
-    const k6 = document.getElementById("6");
-    const k7 = document.getElementById("7");
-    const k8 = document.getElementById("8");
-    const k9 = document.getElementById("9");
-    const k10 = document.getElementById("10");
-    const k11 = document.getElementById("11");
-    const k12 = document.getElementById("12");
-    const k13 = document.getElementById("13");
-    const k14 = document.getElementById("14");
-    const k15 = document.getElementById("15");
-    const k16 = document.getElementById("16");
-    const k17 = document.getElementById("17");
-    const k18 = document.getElementById("18");
-    const k19 = document.getElementById("19");
-    const k20 = document.getElementById("20");
-    const k21 = document.getElementById("21");
-    const k22 = document.getElementById("22");
-    const k23 = document.getElementById("23");
-    const k24 = document.getElementById("24");
-    const k25 = document.getElementById("25");
-    const k26 = document.getElementById("26");
-    const k27 = document.getElementById("27");
-    const k28 = document.getElementById("28");
-    const k29 = document.getElementById("29");
-    const k30 = document.getElementById("30");
-    const k31 = document.getElementById("31");
-    const k32 = document.getElementById("32");
-    const k33 = document.getElementById("33");
-    const k34 = document.getElementById("34");
-    const k35 = document.getElementById("35");
-    const k36 = document.getElementById("36");
-    const k37 = document.getElementById("37");
-    const k38 = document.getElementById("38");
-    const k39 = document.getElementById("39");
-    const k40 = document.getElementById("40");
-    const k41 = document.getElementById("41");
-    const k42 = document.getElementById("42");
-    const k43 = document.getElementById("43");
-    const k44 = document.getElementById("44");
-    const k45 = document.getElementById("45");
-    const k46 = document.getElementById("46");
-    const k47 = document.getElementById("47");
-    const k48 = document.getElementById("48");
-    const k49 = document.getElementById("49");
-    const k50 = document.getElementById("50");
-    const k51 = document.getElementById("51");
-    const k52 = document.getElementById("52");
-    const k53 = document.getElementById("53");
-    const k54 = document.getElementById("54");
-    const k55 = document.getElementById("55");
-    const k56 = document.getElementById("56");
-    const k57 = document.getElementById("57");
-    const k58 = document.getElementById("58");
-    const k59 = document.getElementById("59");
-    const k60 = document.getElementById("60");
-    const k61 = document.getElementById("61");
-    const k62 = document.getElementById("62");
-    const k63 = document.getElementById("63");
-    const k64 = document.getElementById("64");
-    const k65 = document.getElementById("65");
-    const k66 = document.getElementById("66");
-    const k67 = document.getElementById("67");
-    const k68 = document.getElementById("68");
-    const k69 = document.getElementById("69");
-    const k70 = document.getElementById("70");
-    const k71 = document.getElementById("71");
-    const k72 = document.getElementById("72");
-    const k73 = document.getElementById("73");
-    const k74 = document.getElementById("74");
-    const k75 = document.getElementById("75");
-    const k76 = document.getElementById("76");
-    const k77 = document.getElementById("77");
-    const k78 = document.getElementById("78");
-    const k79 = document.getElementById("79");
-    const k80 = document.getElementById("80");
-    const k81 = document.getElementById("81");
-    const k82 = document.getElementById("82");
-    const k83 = document.getElementById("83");
-    const k84 = document.getElementById("84");
-    const k85 = document.getElementById("85");
-    const k86 = document.getElementById("86");
-    const k87 = document.getElementById("87");
-    const k88 = document.getElementById("88");
-    const k89 = document.getElementById("89");
-    const k90 = document.getElementById("90");
-    const k91 = document.getElementById("91");
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!
-    //-----------HEPSİBURADA-----
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!
-    const hpsbrdk1 = document.getElementById("hpsbrdk1");
-    const hpsbrdk2 = document.getElementById("hpsbrdk2");
-    const hpsbrdk3 = document.getElementById("hpsbrdk3");
-    const hpsbrdk4 = document.getElementById("hpsbrdk4");
-    const hpsbrdk5 = document.getElementById("hpsbrdk5");
-    const hpsbrdk6 = document.getElementById("hpsbrdk6");
-    const hpsbrdk7 = document.getElementById("hpsbrdk7");
-    const hpsbrdk8 = document.getElementById("hpsbrdk8");
-    const hpsbrdk9 = document.getElementById("hpsbrdk9");
-    const hpsbrdk10 = document.getElementById("hpsbrdk10");
-    const hpsbrdk11 = document.getElementById("hpsbrdk11");
-    const hpsbrdk12 = document.getElementById("hpsbrdk12");
-    const hpsbrdk13 = document.getElementById("hpsbrdk13");
-    const hpsbrdk14 = document.getElementById("hpsbrdk14");
-    const hpsbrdk15 = document.getElementById("hpsbrdk15");
-    const hpsbrdk16 = document.getElementById("hpsbrdk16");
-    const hpsbrdk17 = document.getElementById("hpsbrdk17");
-    const hpsbrdk18 = document.getElementById("hpsbrdk18");
-    const hpsbrdk19 = document.getElementById("hpsbrdk19");
-    const hpsbrdk20 = document.getElementById("hpsbrdk20");
-    const hpsbrdk21 = document.getElementById("hpsbrdk21");
-    const hpsbrdk22 = document.getElementById("hpsbrdk22");
-    const hpsbrdk23 = document.getElementById("hpsbrdk23");
-    const hpsbrdk24 = document.getElementById("hpsbrdk24");
-    const hpsbrdk25 = document.getElementById("hpsbrdk25");
-    const hpsbrdk26 = document.getElementById("hpsbrdk26");
-    const hpsbrdk27 = document.getElementById("hpsbrdk27");
-    const hpsbrdk28 = document.getElementById("hpsbrdk28");
-    const hpsbrdk29 = document.getElementById("hpsbrdk29");
-    const hpsbrdk30 = document.getElementById("hpsbrdk30");
-    const hpsbrdk31 = document.getElementById("hpsbrdk31");
-    const hpsbrdk32 = document.getElementById("hpsbrdk32");
-    const hpsbrdk33 = document.getElementById("hpsbrdk33");
-    const hpsbrdk34 = document.getElementById("hpsbrdk34");
-    const hpsbrdk35 = document.getElementById("hpsbrdk35");
-    const hpsbrdk36 = document.getElementById("hpsbrdk36");
-    const hpsbrdk37 = document.getElementById("hpsbrdk37");
-    const hpsbrdk38 = document.getElementById("hpsbrdk38");
-    const hpsbrdk39 = document.getElementById("hpsbrdk39");
-    const hpsbrdk40 = document.getElementById("hpsbrdk40");
-    const hpsbrdk41 = document.getElementById("hpsbrdk41");
-    const hpsbrdk42 = document.getElementById("hpsbrdk42");
-    const hpsbrdk43 = document.getElementById("hpsbrdk43");
-    const hpsbrdk44 = document.getElementById("hpsbrdk44");
-    const hpsbrdk45 = document.getElementById("hpsbrdk45");
-    const hpsbrdk46 = document.getElementById("hpsbrdk46");
-    const hpsbrdk47 = document.getElementById("hpsbrdk47");
-    const hpsbrdk48 = document.getElementById("hpsbrdk48");
-    const hpsbrdk49 = document.getElementById("hpsbrdk49");
-    const hpsbrdk50 = document.getElementById("hpsbrdk50");
-    const hpsbrdk51 = document.getElementById("hpsbrdk51");
-    const hpsbrdk52 = document.getElementById("hpsbrdk52");
-    const hpsbrdk53 = document.getElementById("hpsbrdk53");
-    const hpsbrdk54 = document.getElementById("hpsbrdk54");
-    const hpsbrdk55 = document.getElementById("hpsbrdk55");
-    const hpsbrdk56 = document.getElementById("hpsbrdk56");
-    const hpsbrdk57 = document.getElementById("hpsbrdk57");
-    const hpsbrdk58 = document.getElementById("hpsbrdk58");
-    const hpsbrdk59 = document.getElementById("hpsbrdk59");
-    const hpsbrdk60 = document.getElementById("hpsbrdk60");
-    const hpsbrdk61 = document.getElementById("hpsbrdk61");
-    const hpsbrdk62 = document.getElementById("hpsbrdk62");
-    const hpsbrdk63 = document.getElementById("hpsbrdk63");
-    const hpsbrdk64 = document.getElementById("hpsbrdk64");
-    const hpsbrdk65 = document.getElementById("hpsbrdk65");
-    const hpsbrdk66 = document.getElementById("hpsbrdk66");
-    const hpsbrdk67 = document.getElementById("hpsbrdk67");
-    const hpsbrdk68 = document.getElementById("hpsbrdk68");
-    const hpsbrdk69 = document.getElementById("hpsbrdk69");
-    const hpsbrdk70 = document.getElementById("hpsbrdk70");
-    const hpsbrdk71 = document.getElementById("hpsbrdk71");
-    const hpsbrdk72 = document.getElementById("hpsbrdk72");
-    const hpsbrdk73 = document.getElementById("hpsbrdk73");
-    const hpsbrdk74 = document.getElementById("hpsbrdk74");
-    const hpsbrdk75 = document.getElementById("hpsbrdk75");
-    const hpsbrdk76 = document.getElementById("hpsbrdk76");
-    const hpsbrdk77 = document.getElementById("hpsbrdk77");
-    const hpsbrdk78 = document.getElementById("hpsbrdk78");
-    const hpsbrdk79 = document.getElementById("hpsbrdk79");
-    const hpsbrdk80 = document.getElementById("hpsbrdk80");
-    const hpsbrdk81 = document.getElementById("hpsbrdk81");
-    const hpsbrdk82 = document.getElementById("hpsbrdk82");
-    const hpsbrdk83 = document.getElementById("hpsbrdk83");
-    const hpsbrdk84 = document.getElementById("hpsbrdk84");
-    const hpsbrdk85 = document.getElementById("hpsbrdk85");
-    const hpsbrdk86 = document.getElementById("hpsbrdk86");
-    const hpsbrdk87 = document.getElementById("hpsbrdk87");
-    const hpsbrdk88 = document.getElementById("hpsbrdk88");
-    const hpsbrdk89 = document.getElementById("hpsbrdk89");
-    const hpsbrdk90 = document.getElementById("hpsbrdk90");
-    const hpsbrdk91 = document.getElementById("hpsbrdk91");
-    const hpsbrdk92 = document.getElementById("hpsbrdk92");
-    const hpsbrdk93 = document.getElementById("hpsbrdk93");
-    const hpsbrdk94 = document.getElementById("hpsbrdk94");
-    const hpsbrdk95 = document.getElementById("hpsbrdk95");
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!
-    //-------------N11-----------
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!
-    const n11k1 = document.getElementById("n11k1");
-    const n11k2 = document.getElementById("n11k2");
-    const n11k3 = document.getElementById("n11k3");
-    const n11k4 = document.getElementById("n11k4");
-    const n11k5 = document.getElementById("n11k5");
-    const n11k6 = document.getElementById("n11k6");
-    const n11k7 = document.getElementById("n11k7");
-    const n11k8 = document.getElementById("n11k8");
-    const n11k9 = document.getElementById("n11k9");
-    const n11k10 = document.getElementById("n11k10");
-    const n11k11 = document.getElementById("n11k11");
-    const n11k12 = document.getElementById("n11k12");
-    const n11k13 = document.getElementById("n11k13");
-    const n11k14 = document.getElementById("n11k14");
-    const n11k15 = document.getElementById("n11k15");
-    const n11k16 = document.getElementById("n11k16");
-    const n11k17 = document.getElementById("n11k17");
-    const n11k18 = document.getElementById("n11k18");
-    const n11k19 = document.getElementById("n11k19");
-    const n11k20 = document.getElementById("n11k20");
-    const n11k21 = document.getElementById("n11k21");
-    const n11k22 = document.getElementById("n11k22");
-    const n11k23 = document.getElementById("n11k23");
-    const n11k24 = document.getElementById("n11k24");
-    const n11k25 = document.getElementById("n11k25");
-    const n11k26 = document.getElementById("n11k26");
-    const n11k27 = document.getElementById("n11k27");
-    const n11k28 = document.getElementById("n11k28");
-    const n11k29 = document.getElementById("n11k29");
-    const n11k30 = document.getElementById("n11k30");
-    const n11k31 = document.getElementById("n11k31");
-    const n11k32 = document.getElementById("n11k32");
-    const n11k33 = document.getElementById("n11k33");
-    const n11k34 = document.getElementById("n11k34");
-    const n11k35 = document.getElementById("n11k35");
-    const n11k36 = document.getElementById("n11k36");
-    const n11k37 = document.getElementById("n11k37");
-    const n11k38 = document.getElementById("n11k38");
-    const n11k39 = document.getElementById("n11k39");
-    const n11k40 = document.getElementById("n11k40");
-    const n11k41 = document.getElementById("n11k41");
-    const n11k42 = document.getElementById("n11k42");
-    const n11k43 = document.getElementById("n11k43");
-    const n11k44 = document.getElementById("n11k44");
-    const n11k45 = document.getElementById("n11k45");
-    const n11k46 = document.getElementById("n11k46");
-    const n11k47 = document.getElementById("n11k47");
-    const n11k48 = document.getElementById("n11k48");
-    const n11k49 = document.getElementById("n11k49");
-    const n11k50 = document.getElementById("n11k50");
-    const n11k51 = document.getElementById("n11k51");
-    const n11k52 = document.getElementById("n11k52");
-    const n11k53 = document.getElementById("n11k53");
-    const n11k54 = document.getElementById("n11k54");
-    const n11k55 = document.getElementById("n11k55");
-    const n11k56 = document.getElementById("n11k56");
-    const n11k57 = document.getElementById("n11k57");
-    const n11k58 = document.getElementById("n11k58");
-    const n11k59 = document.getElementById("n11k59");
-    const n11k60 = document.getElementById("n11k60");
-    const n11k61 = document.getElementById("n11k61");
-    const n11k62 = document.getElementById("n11k62");
-    const n11k63 = document.getElementById("n11k63");
-    const n11k64 = document.getElementById("n11k64");
-    const n11k65 = document.getElementById("n11k65");
-    const n11k66 = document.getElementById("n11k66");
-    const n11k67 = document.getElementById("n11k67");
-    const n11k68 = document.getElementById("n11k68");
-    const n11k69 = document.getElementById("n11k69");
-    const n11k70 = document.getElementById("n11k70");
-    const n11k71 = document.getElementById("n11k71");
-    const n11k72 = document.getElementById("n11k72");
-    const n11k73 = document.getElementById("n11k73");
-    const n11k74 = document.getElementById("n11k74");
-    const n11k75 = document.getElementById("n11k75");
-    const n11k76 = document.getElementById("n11k76");
-    const n11k77 = document.getElementById("n11k77");
-    const n11k78 = document.getElementById("n11k78");
-    const n11k79 = document.getElementById("n11k79");
-    const n11k80 = document.getElementById("n11k80");
-    const n11k81 = document.getElementById("n11k81");
-    const n11k82 = document.getElementById("n11k82");
-    const n11k83 = document.getElementById("n11k83");
-    const n11k84 = document.getElementById("n11k84");
-    const n11k85 = document.getElementById("n11k85");
-    const n11k86 = document.getElementById("n11k86");
-    const n11k87 = document.getElementById("n11k87");
-    const n11k88 = document.getElementById("n11k88");
-    const n11k89 = document.getElementById("n11k89");
-    const n11k90 = document.getElementById("n11k90");
-    const n11k91 = document.getElementById("n11k91");
-    const n11k92 = document.getElementById("n11k92");
-    const n11k93 = document.getElementById("n11k93");
-    const n11k94 = document.getElementById("n11k94");
-    const n11k95 = document.getElementById("n11k95");
-    const n11k96 = document.getElementById("n11k96");
-    const n11k97 = document.getElementById("n11k97");
-    const n11k98 = document.getElementById("n11k98");
-    const n11k99 = document.getElementById("n11k99");
-    const n11k100 = document.getElementById("n11k100");
-    const n11k101 = document.getElementById("n11k101");
-    const n11k102 = document.getElementById("n11k102");
-    const n11k103 = document.getElementById("n11k103");
-    const n11k104 = document.getElementById("n11k104");
-    const n11k105 = document.getElementById("n11k105");
-    const n11k106 = document.getElementById("n11k106");
-    const n11k107 = document.getElementById("n11k107");
-    const n11k108 = document.getElementById("n11k108");
-    const n11k109 = document.getElementById("n11k109");
-    const n11k110 = document.getElementById("n11k110");
-    const n11k111 = document.getElementById("n11k111");
-    const n11k112 = document.getElementById("n11k112");
-    const n11k113 = document.getElementById("n11k113");
-    const n11k114 = document.getElementById("n11k114");
-    const n11k115 = document.getElementById("n11k115");
-    const n11k116 = document.getElementById("n11k116");
-    const n11k117 = document.getElementById("n11k117");
-    const n11k118 = document.getElementById("n11k118");
-    const n11k119 = document.getElementById("n11k119");
-    const n11k120 = document.getElementById("n11k120");
-    const n11k121 = document.getElementById("n11k121");
-    const n11k122 = document.getElementById("n11k122");
-    const n11k123 = document.getElementById("n11k123");
-    const n11k124 = document.getElementById("n11k124");
-    const n11k125 = document.getElementById("n11k125");
-    const n11k126 = document.getElementById("n11k126");
-    const n11k127 = document.getElementById("n11k127");
-    const n11k128 = document.getElementById("n11k128");
-    const n11k129 = document.getElementById("n11k129");
-    const n11k130 = document.getElementById("n11k130");
-    const n11k131 = document.getElementById("n11k131");
-    const n11k132 = document.getElementById("n11k132");
-    const n11k133 = document.getElementById("n11k133");
-    const n11k134 = document.getElementById("n11k134");
-    const n11k135 = document.getElementById("n11k135");
-    const n11k136 = document.getElementById("n11k136");
-    const n11k137 = document.getElementById("n11k137");
-    const n11k138 = document.getElementById("n11k138");
-    const n11k139 = document.getElementById("n11k139");
-    const n11k140 = document.getElementById("n11k140");
-    const n11k141 = document.getElementById("n11k141");
-    const n11k142 = document.getElementById("n11k142");
-    const n11k143 = document.getElementById("n11k143");
-    const n11k144 = document.getElementById("n11k144");
-    const n11k145 = document.getElementById("n11k145");
-    const n11k146 = document.getElementById("n11k146");
-    const n11k147 = document.getElementById("n11k147");
-    const n11k148 = document.getElementById("n11k148");
-    const n11k149 = document.getElementById("n11k149");
-    const n11k150 = document.getElementById("n11k150");
-    const n11k151 = document.getElementById("n11k151");
-    const n11k152 = document.getElementById("n11k152");
-    const n11k153 = document.getElementById("n11k153");
-    const n11k154 = document.getElementById("n11k154");
-    const n11k155 = document.getElementById("n11k155");
-    const n11k156 = document.getElementById("n11k156");
-    const n11k157 = document.getElementById("n11k157");
-    const n11k158 = document.getElementById("n11k158");
-    const n11k159 = document.getElementById("n11k159");
-    const n11k160 = document.getElementById("n11k160");
-    const n11k161 = document.getElementById("n11k161");
-    const n11k162 = document.getElementById("n11k162");
-    const n11k163 = document.getElementById("n11k163");
-    const n11k164 = document.getElementById("n11k164");
-    const n11k165 = document.getElementById("n11k165");
-    const n11k166 = document.getElementById("n11k166");
-    const n11k167 = document.getElementById("n11k167");
-    const n11k168 = document.getElementById("n11k168");
-    const n11k169 = document.getElementById("n11k169");
-    const n11k170 = document.getElementById("n11k170");
-    const n11k171 = document.getElementById("n11k171");
-    const n11k172 = document.getElementById("n11k172");
-    const n11k173 = document.getElementById("n11k173");
-    const n11k174 = document.getElementById("n11k174");
-    const n11k175 = document.getElementById("n11k175");
-    const n11k176 = document.getElementById("n11k176");
-    const n11k177 = document.getElementById("n11k177");
-    const n11k178 = document.getElementById("n11k178");
-    const n11k179 = document.getElementById("n11k179");
-    const n11k180 = document.getElementById("n11k180");
-    const n11k181 = document.getElementById("n11k181");
-    const n11k182 = document.getElementById("n11k182");
-    const n11k183 = document.getElementById("n11k183");
-    const n11k184 = document.getElementById("n11k184");
-    const n11k185 = document.getElementById("n11k185");
-    const n11k186 = document.getElementById("n11k186");
-    const n11k187 = document.getElementById("n11k187");
-    const n11k188 = document.getElementById("n11k188");
-    const n11k189 = document.getElementById("n11k189");
-    const n11k190 = document.getElementById("n11k190");
-    const n11k191 = document.getElementById("n11k191");
-    const n11k192 = document.getElementById("n11k192");
-    const n11k193 = document.getElementById("n11k193");
-    const n11k194 = document.getElementById("n11k194");
-    const n11k195 = document.getElementById("n11k195");
-    const n11k196 = document.getElementById("n11k196");
-    const n11k197 = document.getElementById("n11k197");
-    const n11k198 = document.getElementById("n11k198");
-    const n11k199 = document.getElementById("n11k199");
-    const n11k200 = document.getElementById("n11k200");
-    const n11k201 = document.getElementById("n11k201");
-    const n11k202 = document.getElementById("n11k202");
-    const n11k203 = document.getElementById("n11k203");
-    const n11k204 = document.getElementById("n11k204");
-    const n11k205 = document.getElementById("n11k205");
-    const n11k206 = document.getElementById("n11k206");
-    const n11k207 = document.getElementById("n11k207");
-    const n11k208 = document.getElementById("n11k208");
-    const n11k209 = document.getElementById("n11k209");
-    const n11k210 = document.getElementById("n11k210");
-    const n11k211 = document.getElementById("n11k211");
-    const n11k212 = document.getElementById("n11k212");
-    const n11k213 = document.getElementById("n11k213");
-    const n11k214 = document.getElementById("n11k214");
-    const n11k215 = document.getElementById("n11k215");
-    const n11k216 = document.getElementById("n11k216");
-    const n11k217 = document.getElementById("n11k217");
-    const n11k218 = document.getElementById("n11k218");
-    const n11k219 = document.getElementById("n11k219");
-    const n11k220 = document.getElementById("n11k220");
-    const n11k221 = document.getElementById("n11k221");
-    const n11k222 = document.getElementById("n11k222");
-    const n11k223 = document.getElementById("n11k223");
-    const n11k224 = document.getElementById("n11k224");
-    const n11k225 = document.getElementById("n11k225");
-    const n11k226 = document.getElementById("n11k226");
-    const n11k227 = document.getElementById("n11k227");
-    const n11k228 = document.getElementById("n11k228");
-    const n11k229 = document.getElementById("n11k229");
-    const n11k230 = document.getElementById("n11k230");
-    const n11k231 = document.getElementById("n11k231");
-    const n11k232 = document.getElementById("n11k232");
-    const n11k233 = document.getElementById("n11k233");
-    const n11k234 = document.getElementById("n11k234");
-    const n11k235 = document.getElementById("n11k235");
-    const n11k236 = document.getElementById("n11k236");
-    const n11k237 = document.getElementById("n11k237");
-    const n11k238 = document.getElementById("n11k238");
-    const n11k239 = document.getElementById("n11k239");
-    const n11k240 = document.getElementById("n11k240");
-    const n11k241 = document.getElementById("n11k241");
-    const n11k242 = document.getElementById("n11k242");
-    const n11k243 = document.getElementById("n11k243");
-    const n11k244 = document.getElementById("n11k244");
-    const n11k245 = document.getElementById("n11k245");
-    const n11k246 = document.getElementById("n11k246");
-    const n11k247 = document.getElementById("n11k247");
-    const n11k248 = document.getElementById("n11k248");
-    const n11k249 = document.getElementById("n11k249");
-    const n11k250 = document.getElementById("n11k250");
-    const n11k251 = document.getElementById("n11k251");
-    const n11k252 = document.getElementById("n11k252");
-    const n11k253 = document.getElementById("n11k253");
-    const n11k254 = document.getElementById("n11k254");
-    const n11k255 = document.getElementById("n11k255");
-    const n11k256 = document.getElementById("n11k256");
-    const n11k257 = document.getElementById("n11k257");
-    const n11k258 = document.getElementById("n11k258");
-    const n11k259 = document.getElementById("n11k259");
-    const n11k260 = document.getElementById("n11k260");
-    const n11k261 = document.getElementById("n11k261");
-    const n11k262 = document.getElementById("n11k262");
-    const n11k263 = document.getElementById("n11k263");
-    const n11k264 = document.getElementById("n11k264");
-    const n11k265 = document.getElementById("n11k265");
-    const n11k266 = document.getElementById("n11k266");
-    const n11k267 = document.getElementById("n11k267");
-    const n11k268 = document.getElementById("n11k268");
-    const n11k269 = document.getElementById("n11k269");
-    const n11k270 = document.getElementById("n11k270");
-    const n11k271 = document.getElementById("n11k271");
-    const n11k272 = document.getElementById("n11k272");
-    const n11k273 = document.getElementById("n11k273");
-    const n11k274 = document.getElementById("n11k274");
-    const n11k275 = document.getElementById("n11k275");
-    const n11k276 = document.getElementById("n11k276");
-    const n11k277 = document.getElementById("n11k277");
-    const n11k278 = document.getElementById("n11k278");
-    const n11k279 = document.getElementById("n11k279");
-    const n11k280 = document.getElementById("n11k280");
-    const n11k281 = document.getElementById("n11k281");
-    const n11k282 = document.getElementById("n11k282");
-    const n11k283 = document.getElementById("n11k283");
-    const n11k284 = document.getElementById("n11k284");
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!
-    //---------ÇİÇEK SEPETİ-----
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!
-    const ciceksptk1 = document.getElementById("ciceksptk1");
-    const ciceksptk2 = document.getElementById("ciceksptk2");
-    const ciceksptk3 = document.getElementById("ciceksptk3");
-    const ciceksptk4 = document.getElementById("ciceksptk4");
-    const ciceksptk5 = document.getElementById("ciceksptk5");
-    const ciceksptk6 = document.getElementById("ciceksptk6");
-    const ciceksptk7 = document.getElementById("ciceksptk7");
-    const ciceksptk8 = document.getElementById("ciceksptk8");
-    const ciceksptk9 = document.getElementById("ciceksptk9");
-    const ciceksptk10 = document.getElementById("ciceksptk10");
-    const ciceksptk11 = document.getElementById("ciceksptk11");
-    const ciceksptk12 = document.getElementById("ciceksptk12");
-    const ciceksptk13 = document.getElementById("ciceksptk13");
-    const ciceksptk14 = document.getElementById("ciceksptk14");
-    const ciceksptk15 = document.getElementById("ciceksptk15");
-    const ciceksptk16 = document.getElementById("ciceksptk16");
-    const ciceksptk17 = document.getElementById("ciceksptk17");
-    const ciceksptk18 = document.getElementById("ciceksptk18");
-    const ciceksptk19 = document.getElementById("ciceksptk19");
-    const ciceksptk20 = document.getElementById("ciceksptk20");
-    const ciceksptk21 = document.getElementById("ciceksptk21");
-    const ciceksptk22 = document.getElementById("ciceksptk22");
-    const ciceksptk23 = document.getElementById("ciceksptk23");
-    const ciceksptk24 = document.getElementById("ciceksptk24");
-    const ciceksptk25 = document.getElementById("ciceksptk25");
-    const ciceksptk26 = document.getElementById("ciceksptk26");
-    const ciceksptk27 = document.getElementById("ciceksptk27");
+  kategori.value = " ";
+});
+let komisyon = "";
+let kdv = 0.18;
+kdv0.addEventListener("click", () => {
+  kdv = 0;
+  kdvBox.innerHTML = `% ${(kdv * 100).toFixed(1)}`;
+});
+kdv1.addEventListener("click", () => {
+  kdv = 0.01;
+  kdvBox.innerHTML = `% ${(kdv * 100).toFixed(1)}`;
+});
+kdv8.addEventListener("click", () => {
+  kdv = 0.08;
+  kdvBox.innerHTML = `% ${(kdv * 100).toFixed(1)}`;
+});
+kdv18.addEventListener("click", () => {
+  kdv = 0.18;
+  kdvBox.innerHTML = `% ${(kdv * 100).toFixed(1)}`;
+});
+btnHesaplama.addEventListener("click", () => {
+  const k1 = document.getElementById("1");
+  const k2 = document.getElementById("2");
+  const k3 = document.getElementById("3");
+  const k4 = document.getElementById("4");
+  const k5 = document.getElementById("5");
+  const k6 = document.getElementById("6");
+  const k7 = document.getElementById("7");
+  const k8 = document.getElementById("8");
+  const k9 = document.getElementById("9");
+  const k10 = document.getElementById("10");
+  const k11 = document.getElementById("11");
+  const k12 = document.getElementById("12");
+  const k13 = document.getElementById("13");
+  const k14 = document.getElementById("14");
+  const k15 = document.getElementById("15");
+  const k16 = document.getElementById("16");
+  const k17 = document.getElementById("17");
+  const k18 = document.getElementById("18");
+  const k19 = document.getElementById("19");
+  const k20 = document.getElementById("20");
+  const k21 = document.getElementById("21");
+  const k22 = document.getElementById("22");
+  const k23 = document.getElementById("23");
+  const k24 = document.getElementById("24");
+  const k25 = document.getElementById("25");
+  const k26 = document.getElementById("26");
+  const k27 = document.getElementById("27");
+  const k28 = document.getElementById("28");
+  const k29 = document.getElementById("29");
+  const k30 = document.getElementById("30");
+  const k31 = document.getElementById("31");
+  const k32 = document.getElementById("32");
+  const k33 = document.getElementById("33");
+  const k34 = document.getElementById("34");
+  const k35 = document.getElementById("35");
+  const k36 = document.getElementById("36");
+  const k37 = document.getElementById("37");
+  const k38 = document.getElementById("38");
+  const k39 = document.getElementById("39");
+  const k40 = document.getElementById("40");
+  const k41 = document.getElementById("41");
+  const k42 = document.getElementById("42");
+  const k43 = document.getElementById("43");
+  const k44 = document.getElementById("44");
+  const k45 = document.getElementById("45");
+  const k46 = document.getElementById("46");
+  const k47 = document.getElementById("47");
+  const k48 = document.getElementById("48");
+  const k49 = document.getElementById("49");
+  const k50 = document.getElementById("50");
+  const k51 = document.getElementById("51");
+  const k52 = document.getElementById("52");
+  const k53 = document.getElementById("53");
+  const k54 = document.getElementById("54");
+  const k55 = document.getElementById("55");
+  const k56 = document.getElementById("56");
+  const k57 = document.getElementById("57");
+  const k58 = document.getElementById("58");
+  const k59 = document.getElementById("59");
+  const k60 = document.getElementById("60");
+  const k61 = document.getElementById("61");
+  const k62 = document.getElementById("62");
+  const k63 = document.getElementById("63");
+  const k64 = document.getElementById("64");
+  const k65 = document.getElementById("65");
+  const k66 = document.getElementById("66");
+  const k67 = document.getElementById("67");
+  const k68 = document.getElementById("68");
+  const k69 = document.getElementById("69");
+  const k70 = document.getElementById("70");
+  const k71 = document.getElementById("71");
+  const k72 = document.getElementById("72");
+  const k73 = document.getElementById("73");
+  const k74 = document.getElementById("74");
+  const k75 = document.getElementById("75");
+  const k76 = document.getElementById("76");
+  const k77 = document.getElementById("77");
+  const k78 = document.getElementById("78");
+  const k79 = document.getElementById("79");
+  const k80 = document.getElementById("80");
+  const k81 = document.getElementById("81");
+  const k82 = document.getElementById("82");
+  const k83 = document.getElementById("83");
+  const k84 = document.getElementById("84");
+  const k85 = document.getElementById("85");
+  const k86 = document.getElementById("86");
+  const k87 = document.getElementById("87");
+  const k88 = document.getElementById("88");
+  const k89 = document.getElementById("89");
+  const k90 = document.getElementById("90");
+  const k91 = document.getElementById("91");
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!
+  //-----------HEPSİBURADA-----
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!
+  const hpsbrdk1 = document.getElementById("hpsbrdk1");
+  const hpsbrdk2 = document.getElementById("hpsbrdk2");
+  const hpsbrdk3 = document.getElementById("hpsbrdk3");
+  const hpsbrdk4 = document.getElementById("hpsbrdk4");
+  const hpsbrdk5 = document.getElementById("hpsbrdk5");
+  const hpsbrdk6 = document.getElementById("hpsbrdk6");
+  const hpsbrdk7 = document.getElementById("hpsbrdk7");
+  const hpsbrdk8 = document.getElementById("hpsbrdk8");
+  const hpsbrdk9 = document.getElementById("hpsbrdk9");
+  const hpsbrdk10 = document.getElementById("hpsbrdk10");
+  const hpsbrdk11 = document.getElementById("hpsbrdk11");
+  const hpsbrdk12 = document.getElementById("hpsbrdk12");
+  const hpsbrdk13 = document.getElementById("hpsbrdk13");
+  const hpsbrdk14 = document.getElementById("hpsbrdk14");
+  const hpsbrdk15 = document.getElementById("hpsbrdk15");
+  const hpsbrdk16 = document.getElementById("hpsbrdk16");
+  const hpsbrdk17 = document.getElementById("hpsbrdk17");
+  const hpsbrdk18 = document.getElementById("hpsbrdk18");
+  const hpsbrdk19 = document.getElementById("hpsbrdk19");
+  const hpsbrdk20 = document.getElementById("hpsbrdk20");
+  const hpsbrdk21 = document.getElementById("hpsbrdk21");
+  const hpsbrdk22 = document.getElementById("hpsbrdk22");
+  const hpsbrdk23 = document.getElementById("hpsbrdk23");
+  const hpsbrdk24 = document.getElementById("hpsbrdk24");
+  const hpsbrdk25 = document.getElementById("hpsbrdk25");
+  const hpsbrdk26 = document.getElementById("hpsbrdk26");
+  const hpsbrdk27 = document.getElementById("hpsbrdk27");
+  const hpsbrdk28 = document.getElementById("hpsbrdk28");
+  const hpsbrdk29 = document.getElementById("hpsbrdk29");
+  const hpsbrdk30 = document.getElementById("hpsbrdk30");
+  const hpsbrdk31 = document.getElementById("hpsbrdk31");
+  const hpsbrdk32 = document.getElementById("hpsbrdk32");
+  const hpsbrdk33 = document.getElementById("hpsbrdk33");
+  const hpsbrdk34 = document.getElementById("hpsbrdk34");
+  const hpsbrdk35 = document.getElementById("hpsbrdk35");
+  const hpsbrdk36 = document.getElementById("hpsbrdk36");
+  const hpsbrdk37 = document.getElementById("hpsbrdk37");
+  const hpsbrdk38 = document.getElementById("hpsbrdk38");
+  const hpsbrdk39 = document.getElementById("hpsbrdk39");
+  const hpsbrdk40 = document.getElementById("hpsbrdk40");
+  const hpsbrdk41 = document.getElementById("hpsbrdk41");
+  const hpsbrdk42 = document.getElementById("hpsbrdk42");
+  const hpsbrdk43 = document.getElementById("hpsbrdk43");
+  const hpsbrdk44 = document.getElementById("hpsbrdk44");
+  const hpsbrdk45 = document.getElementById("hpsbrdk45");
+  const hpsbrdk46 = document.getElementById("hpsbrdk46");
+  const hpsbrdk47 = document.getElementById("hpsbrdk47");
+  const hpsbrdk48 = document.getElementById("hpsbrdk48");
+  const hpsbrdk49 = document.getElementById("hpsbrdk49");
+  const hpsbrdk50 = document.getElementById("hpsbrdk50");
+  const hpsbrdk51 = document.getElementById("hpsbrdk51");
+  const hpsbrdk52 = document.getElementById("hpsbrdk52");
+  const hpsbrdk53 = document.getElementById("hpsbrdk53");
+  const hpsbrdk54 = document.getElementById("hpsbrdk54");
+  const hpsbrdk55 = document.getElementById("hpsbrdk55");
+  const hpsbrdk56 = document.getElementById("hpsbrdk56");
+  const hpsbrdk57 = document.getElementById("hpsbrdk57");
+  const hpsbrdk58 = document.getElementById("hpsbrdk58");
+  const hpsbrdk59 = document.getElementById("hpsbrdk59");
+  const hpsbrdk60 = document.getElementById("hpsbrdk60");
+  const hpsbrdk61 = document.getElementById("hpsbrdk61");
+  const hpsbrdk62 = document.getElementById("hpsbrdk62");
+  const hpsbrdk63 = document.getElementById("hpsbrdk63");
+  const hpsbrdk64 = document.getElementById("hpsbrdk64");
+  const hpsbrdk65 = document.getElementById("hpsbrdk65");
+  const hpsbrdk66 = document.getElementById("hpsbrdk66");
+  const hpsbrdk67 = document.getElementById("hpsbrdk67");
+  const hpsbrdk68 = document.getElementById("hpsbrdk68");
+  const hpsbrdk69 = document.getElementById("hpsbrdk69");
+  const hpsbrdk70 = document.getElementById("hpsbrdk70");
+  const hpsbrdk71 = document.getElementById("hpsbrdk71");
+  const hpsbrdk72 = document.getElementById("hpsbrdk72");
+  const hpsbrdk73 = document.getElementById("hpsbrdk73");
+  const hpsbrdk74 = document.getElementById("hpsbrdk74");
+  const hpsbrdk75 = document.getElementById("hpsbrdk75");
+  const hpsbrdk76 = document.getElementById("hpsbrdk76");
+  const hpsbrdk77 = document.getElementById("hpsbrdk77");
+  const hpsbrdk78 = document.getElementById("hpsbrdk78");
+  const hpsbrdk79 = document.getElementById("hpsbrdk79");
+  const hpsbrdk80 = document.getElementById("hpsbrdk80");
+  const hpsbrdk81 = document.getElementById("hpsbrdk81");
+  const hpsbrdk82 = document.getElementById("hpsbrdk82");
+  const hpsbrdk83 = document.getElementById("hpsbrdk83");
+  const hpsbrdk84 = document.getElementById("hpsbrdk84");
+  const hpsbrdk85 = document.getElementById("hpsbrdk85");
+  const hpsbrdk86 = document.getElementById("hpsbrdk86");
+  const hpsbrdk87 = document.getElementById("hpsbrdk87");
+  const hpsbrdk88 = document.getElementById("hpsbrdk88");
+  const hpsbrdk89 = document.getElementById("hpsbrdk89");
+  const hpsbrdk90 = document.getElementById("hpsbrdk90");
+  const hpsbrdk91 = document.getElementById("hpsbrdk91");
+  const hpsbrdk92 = document.getElementById("hpsbrdk92");
+  const hpsbrdk93 = document.getElementById("hpsbrdk93");
+  const hpsbrdk94 = document.getElementById("hpsbrdk94");
+  const hpsbrdk95 = document.getElementById("hpsbrdk95");
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!
+  //-------------N11-----------
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!
+  const n11k1 = document.getElementById("n11k1");
+  const n11k2 = document.getElementById("n11k2");
+  const n11k3 = document.getElementById("n11k3");
+  const n11k4 = document.getElementById("n11k4");
+  const n11k5 = document.getElementById("n11k5");
+  const n11k6 = document.getElementById("n11k6");
+  const n11k7 = document.getElementById("n11k7");
+  const n11k8 = document.getElementById("n11k8");
+  const n11k9 = document.getElementById("n11k9");
+  const n11k10 = document.getElementById("n11k10");
+  const n11k11 = document.getElementById("n11k11");
+  const n11k12 = document.getElementById("n11k12");
+  const n11k13 = document.getElementById("n11k13");
+  const n11k14 = document.getElementById("n11k14");
+  const n11k15 = document.getElementById("n11k15");
+  const n11k16 = document.getElementById("n11k16");
+  const n11k17 = document.getElementById("n11k17");
+  const n11k18 = document.getElementById("n11k18");
+  const n11k19 = document.getElementById("n11k19");
+  const n11k20 = document.getElementById("n11k20");
+  const n11k21 = document.getElementById("n11k21");
+  const n11k22 = document.getElementById("n11k22");
+  const n11k23 = document.getElementById("n11k23");
+  const n11k24 = document.getElementById("n11k24");
+  const n11k25 = document.getElementById("n11k25");
+  const n11k26 = document.getElementById("n11k26");
+  const n11k27 = document.getElementById("n11k27");
+  const n11k28 = document.getElementById("n11k28");
+  const n11k29 = document.getElementById("n11k29");
+  const n11k30 = document.getElementById("n11k30");
+  const n11k31 = document.getElementById("n11k31");
+  const n11k32 = document.getElementById("n11k32");
+  const n11k33 = document.getElementById("n11k33");
+  const n11k34 = document.getElementById("n11k34");
+  const n11k35 = document.getElementById("n11k35");
+  const n11k36 = document.getElementById("n11k36");
+  const n11k37 = document.getElementById("n11k37");
+  const n11k38 = document.getElementById("n11k38");
+  const n11k39 = document.getElementById("n11k39");
+  const n11k40 = document.getElementById("n11k40");
+  const n11k41 = document.getElementById("n11k41");
+  const n11k42 = document.getElementById("n11k42");
+  const n11k43 = document.getElementById("n11k43");
+  const n11k44 = document.getElementById("n11k44");
+  const n11k45 = document.getElementById("n11k45");
+  const n11k46 = document.getElementById("n11k46");
+  const n11k47 = document.getElementById("n11k47");
+  const n11k48 = document.getElementById("n11k48");
+  const n11k49 = document.getElementById("n11k49");
+  const n11k50 = document.getElementById("n11k50");
+  const n11k51 = document.getElementById("n11k51");
+  const n11k52 = document.getElementById("n11k52");
+  const n11k53 = document.getElementById("n11k53");
+  const n11k54 = document.getElementById("n11k54");
+  const n11k55 = document.getElementById("n11k55");
+  const n11k56 = document.getElementById("n11k56");
+  const n11k57 = document.getElementById("n11k57");
+  const n11k58 = document.getElementById("n11k58");
+  const n11k59 = document.getElementById("n11k59");
+  const n11k60 = document.getElementById("n11k60");
+  const n11k61 = document.getElementById("n11k61");
+  const n11k62 = document.getElementById("n11k62");
+  const n11k63 = document.getElementById("n11k63");
+  const n11k64 = document.getElementById("n11k64");
+  const n11k65 = document.getElementById("n11k65");
+  const n11k66 = document.getElementById("n11k66");
+  const n11k67 = document.getElementById("n11k67");
+  const n11k68 = document.getElementById("n11k68");
+  const n11k69 = document.getElementById("n11k69");
+  const n11k70 = document.getElementById("n11k70");
+  const n11k71 = document.getElementById("n11k71");
+  const n11k72 = document.getElementById("n11k72");
+  const n11k73 = document.getElementById("n11k73");
+  const n11k74 = document.getElementById("n11k74");
+  const n11k75 = document.getElementById("n11k75");
+  const n11k76 = document.getElementById("n11k76");
+  const n11k77 = document.getElementById("n11k77");
+  const n11k78 = document.getElementById("n11k78");
+  const n11k79 = document.getElementById("n11k79");
+  const n11k80 = document.getElementById("n11k80");
+  const n11k81 = document.getElementById("n11k81");
+  const n11k82 = document.getElementById("n11k82");
+  const n11k83 = document.getElementById("n11k83");
+  const n11k84 = document.getElementById("n11k84");
+  const n11k85 = document.getElementById("n11k85");
+  const n11k86 = document.getElementById("n11k86");
+  const n11k87 = document.getElementById("n11k87");
+  const n11k88 = document.getElementById("n11k88");
+  const n11k89 = document.getElementById("n11k89");
+  const n11k90 = document.getElementById("n11k90");
+  const n11k91 = document.getElementById("n11k91");
+  const n11k92 = document.getElementById("n11k92");
+  const n11k93 = document.getElementById("n11k93");
+  const n11k94 = document.getElementById("n11k94");
+  const n11k95 = document.getElementById("n11k95");
+  const n11k96 = document.getElementById("n11k96");
+  const n11k97 = document.getElementById("n11k97");
+  const n11k98 = document.getElementById("n11k98");
+  const n11k99 = document.getElementById("n11k99");
+  const n11k100 = document.getElementById("n11k100");
+  const n11k101 = document.getElementById("n11k101");
+  const n11k102 = document.getElementById("n11k102");
+  const n11k103 = document.getElementById("n11k103");
+  const n11k104 = document.getElementById("n11k104");
+  const n11k105 = document.getElementById("n11k105");
+  const n11k106 = document.getElementById("n11k106");
+  const n11k107 = document.getElementById("n11k107");
+  const n11k108 = document.getElementById("n11k108");
+  const n11k109 = document.getElementById("n11k109");
+  const n11k110 = document.getElementById("n11k110");
+  const n11k111 = document.getElementById("n11k111");
+  const n11k112 = document.getElementById("n11k112");
+  const n11k113 = document.getElementById("n11k113");
+  const n11k114 = document.getElementById("n11k114");
+  const n11k115 = document.getElementById("n11k115");
+  const n11k116 = document.getElementById("n11k116");
+  const n11k117 = document.getElementById("n11k117");
+  const n11k118 = document.getElementById("n11k118");
+  const n11k119 = document.getElementById("n11k119");
+  const n11k120 = document.getElementById("n11k120");
+  const n11k121 = document.getElementById("n11k121");
+  const n11k122 = document.getElementById("n11k122");
+  const n11k123 = document.getElementById("n11k123");
+  const n11k124 = document.getElementById("n11k124");
+  const n11k125 = document.getElementById("n11k125");
+  const n11k126 = document.getElementById("n11k126");
+  const n11k127 = document.getElementById("n11k127");
+  const n11k128 = document.getElementById("n11k128");
+  const n11k129 = document.getElementById("n11k129");
+  const n11k130 = document.getElementById("n11k130");
+  const n11k131 = document.getElementById("n11k131");
+  const n11k132 = document.getElementById("n11k132");
+  const n11k133 = document.getElementById("n11k133");
+  const n11k134 = document.getElementById("n11k134");
+  const n11k135 = document.getElementById("n11k135");
+  const n11k136 = document.getElementById("n11k136");
+  const n11k137 = document.getElementById("n11k137");
+  const n11k138 = document.getElementById("n11k138");
+  const n11k139 = document.getElementById("n11k139");
+  const n11k140 = document.getElementById("n11k140");
+  const n11k141 = document.getElementById("n11k141");
+  const n11k142 = document.getElementById("n11k142");
+  const n11k143 = document.getElementById("n11k143");
+  const n11k144 = document.getElementById("n11k144");
+  const n11k145 = document.getElementById("n11k145");
+  const n11k146 = document.getElementById("n11k146");
+  const n11k147 = document.getElementById("n11k147");
+  const n11k148 = document.getElementById("n11k148");
+  const n11k149 = document.getElementById("n11k149");
+  const n11k150 = document.getElementById("n11k150");
+  const n11k151 = document.getElementById("n11k151");
+  const n11k152 = document.getElementById("n11k152");
+  const n11k153 = document.getElementById("n11k153");
+  const n11k154 = document.getElementById("n11k154");
+  const n11k155 = document.getElementById("n11k155");
+  const n11k156 = document.getElementById("n11k156");
+  const n11k157 = document.getElementById("n11k157");
+  const n11k158 = document.getElementById("n11k158");
+  const n11k159 = document.getElementById("n11k159");
+  const n11k160 = document.getElementById("n11k160");
+  const n11k161 = document.getElementById("n11k161");
+  const n11k162 = document.getElementById("n11k162");
+  const n11k163 = document.getElementById("n11k163");
+  const n11k164 = document.getElementById("n11k164");
+  const n11k165 = document.getElementById("n11k165");
+  const n11k166 = document.getElementById("n11k166");
+  const n11k167 = document.getElementById("n11k167");
+  const n11k168 = document.getElementById("n11k168");
+  const n11k169 = document.getElementById("n11k169");
+  const n11k170 = document.getElementById("n11k170");
+  const n11k171 = document.getElementById("n11k171");
+  const n11k172 = document.getElementById("n11k172");
+  const n11k173 = document.getElementById("n11k173");
+  const n11k174 = document.getElementById("n11k174");
+  const n11k175 = document.getElementById("n11k175");
+  const n11k176 = document.getElementById("n11k176");
+  const n11k177 = document.getElementById("n11k177");
+  const n11k178 = document.getElementById("n11k178");
+  const n11k179 = document.getElementById("n11k179");
+  const n11k180 = document.getElementById("n11k180");
+  const n11k181 = document.getElementById("n11k181");
+  const n11k182 = document.getElementById("n11k182");
+  const n11k183 = document.getElementById("n11k183");
+  const n11k184 = document.getElementById("n11k184");
+  const n11k185 = document.getElementById("n11k185");
+  const n11k186 = document.getElementById("n11k186");
+  const n11k187 = document.getElementById("n11k187");
+  const n11k188 = document.getElementById("n11k188");
+  const n11k189 = document.getElementById("n11k189");
+  const n11k190 = document.getElementById("n11k190");
+  const n11k191 = document.getElementById("n11k191");
+  const n11k192 = document.getElementById("n11k192");
+  const n11k193 = document.getElementById("n11k193");
+  const n11k194 = document.getElementById("n11k194");
+  const n11k195 = document.getElementById("n11k195");
+  const n11k196 = document.getElementById("n11k196");
+  const n11k197 = document.getElementById("n11k197");
+  const n11k198 = document.getElementById("n11k198");
+  const n11k199 = document.getElementById("n11k199");
+  const n11k200 = document.getElementById("n11k200");
+  const n11k201 = document.getElementById("n11k201");
+  const n11k202 = document.getElementById("n11k202");
+  const n11k203 = document.getElementById("n11k203");
+  const n11k204 = document.getElementById("n11k204");
+  const n11k205 = document.getElementById("n11k205");
+  const n11k206 = document.getElementById("n11k206");
+  const n11k207 = document.getElementById("n11k207");
+  const n11k208 = document.getElementById("n11k208");
+  const n11k209 = document.getElementById("n11k209");
+  const n11k210 = document.getElementById("n11k210");
+  const n11k211 = document.getElementById("n11k211");
+  const n11k212 = document.getElementById("n11k212");
+  const n11k213 = document.getElementById("n11k213");
+  const n11k214 = document.getElementById("n11k214");
+  const n11k215 = document.getElementById("n11k215");
+  const n11k216 = document.getElementById("n11k216");
+  const n11k217 = document.getElementById("n11k217");
+  const n11k218 = document.getElementById("n11k218");
+  const n11k219 = document.getElementById("n11k219");
+  const n11k220 = document.getElementById("n11k220");
+  const n11k221 = document.getElementById("n11k221");
+  const n11k222 = document.getElementById("n11k222");
+  const n11k223 = document.getElementById("n11k223");
+  const n11k224 = document.getElementById("n11k224");
+  const n11k225 = document.getElementById("n11k225");
+  const n11k226 = document.getElementById("n11k226");
+  const n11k227 = document.getElementById("n11k227");
+  const n11k228 = document.getElementById("n11k228");
+  const n11k229 = document.getElementById("n11k229");
+  const n11k230 = document.getElementById("n11k230");
+  const n11k231 = document.getElementById("n11k231");
+  const n11k232 = document.getElementById("n11k232");
+  const n11k233 = document.getElementById("n11k233");
+  const n11k234 = document.getElementById("n11k234");
+  const n11k235 = document.getElementById("n11k235");
+  const n11k236 = document.getElementById("n11k236");
+  const n11k237 = document.getElementById("n11k237");
+  const n11k238 = document.getElementById("n11k238");
+  const n11k239 = document.getElementById("n11k239");
+  const n11k240 = document.getElementById("n11k240");
+  const n11k241 = document.getElementById("n11k241");
+  const n11k242 = document.getElementById("n11k242");
+  const n11k243 = document.getElementById("n11k243");
+  const n11k244 = document.getElementById("n11k244");
+  const n11k245 = document.getElementById("n11k245");
+  const n11k246 = document.getElementById("n11k246");
+  const n11k247 = document.getElementById("n11k247");
+  const n11k248 = document.getElementById("n11k248");
+  const n11k249 = document.getElementById("n11k249");
+  const n11k250 = document.getElementById("n11k250");
+  const n11k251 = document.getElementById("n11k251");
+  const n11k252 = document.getElementById("n11k252");
+  const n11k253 = document.getElementById("n11k253");
+  const n11k254 = document.getElementById("n11k254");
+  const n11k255 = document.getElementById("n11k255");
+  const n11k256 = document.getElementById("n11k256");
+  const n11k257 = document.getElementById("n11k257");
+  const n11k258 = document.getElementById("n11k258");
+  const n11k259 = document.getElementById("n11k259");
+  const n11k260 = document.getElementById("n11k260");
+  const n11k261 = document.getElementById("n11k261");
+  const n11k262 = document.getElementById("n11k262");
+  const n11k263 = document.getElementById("n11k263");
+  const n11k264 = document.getElementById("n11k264");
+  const n11k265 = document.getElementById("n11k265");
+  const n11k266 = document.getElementById("n11k266");
+  const n11k267 = document.getElementById("n11k267");
+  const n11k268 = document.getElementById("n11k268");
+  const n11k269 = document.getElementById("n11k269");
+  const n11k270 = document.getElementById("n11k270");
+  const n11k271 = document.getElementById("n11k271");
+  const n11k272 = document.getElementById("n11k272");
+  const n11k273 = document.getElementById("n11k273");
+  const n11k274 = document.getElementById("n11k274");
+  const n11k275 = document.getElementById("n11k275");
+  const n11k276 = document.getElementById("n11k276");
+  const n11k277 = document.getElementById("n11k277");
+  const n11k278 = document.getElementById("n11k278");
+  const n11k279 = document.getElementById("n11k279");
+  const n11k280 = document.getElementById("n11k280");
+  const n11k281 = document.getElementById("n11k281");
+  const n11k282 = document.getElementById("n11k282");
+  const n11k283 = document.getElementById("n11k283");
+  const n11k284 = document.getElementById("n11k284");
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!
+  //---------ÇİÇEK SEPETİ-----
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!
+  const ciceksptk1 = document.getElementById("ciceksptk1");
+  const ciceksptk2 = document.getElementById("ciceksptk2");
+  const ciceksptk3 = document.getElementById("ciceksptk3");
+  const ciceksptk4 = document.getElementById("ciceksptk4");
+  const ciceksptk5 = document.getElementById("ciceksptk5");
+  const ciceksptk6 = document.getElementById("ciceksptk6");
+  const ciceksptk7 = document.getElementById("ciceksptk7");
+  const ciceksptk8 = document.getElementById("ciceksptk8");
+  const ciceksptk9 = document.getElementById("ciceksptk9");
+  const ciceksptk10 = document.getElementById("ciceksptk10");
+  const ciceksptk11 = document.getElementById("ciceksptk11");
+  const ciceksptk12 = document.getElementById("ciceksptk12");
+  const ciceksptk13 = document.getElementById("ciceksptk13");
+  const ciceksptk14 = document.getElementById("ciceksptk14");
+  const ciceksptk15 = document.getElementById("ciceksptk15");
+  const ciceksptk16 = document.getElementById("ciceksptk16");
+  const ciceksptk17 = document.getElementById("ciceksptk17");
+  const ciceksptk18 = document.getElementById("ciceksptk18");
+  const ciceksptk19 = document.getElementById("ciceksptk19");
+  const ciceksptk20 = document.getElementById("ciceksptk20");
+  const ciceksptk21 = document.getElementById("ciceksptk21");
+  const ciceksptk22 = document.getElementById("ciceksptk22");
+  const ciceksptk23 = document.getElementById("ciceksptk23");
+  const ciceksptk24 = document.getElementById("ciceksptk24");
+  const ciceksptk25 = document.getElementById("ciceksptk25");
+  const ciceksptk26 = document.getElementById("ciceksptk26");
+  const ciceksptk27 = document.getElementById("ciceksptk27");
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!
+  //-----------AMAZON-----------
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!
+  const amznk1 = document.getElementById("amznk1");
+  const amznk2 = document.getElementById("amznk2");
+  const amznk3 = document.getElementById("amznk3");
+  const amznk4 = document.getElementById("amznk4");
+  const amznk5 = document.getElementById("amznk5");
+  const amznk6 = document.getElementById("amznk6");
+  const amznk7 = document.getElementById("amznk7");
+  const amznk8 = document.getElementById("amznk8");
+  const amznk9 = document.getElementById("amznk9");
+  const amznk10 = document.getElementById("amznk10");
+  const amznk11 = document.getElementById("amznk11");
+  const amznk12 = document.getElementById("amznk12");
+  const amznk13 = document.getElementById("amznk13");
+  const amznk14 = document.getElementById("amznk14");
+  const amznk15 = document.getElementById("amznk15");
+  //!!
+  //********* TRENDYOL ************//
+  //!!
+  if (pazaryeri.value == pazaryeriTrendyol.value) {
+    if (kategori.value == k1.value) {
+      komisyon = 0.05;
+    }
+    if (kategori.value == k2.value) {
+      komisyon = 0.21;
+    }
+    if (kategori.value == k3.value) {
+      komisyon = 0.21;
+    }
+    if (kategori.value == k4.value) {
+      komisyon = 0.22;
+    }
+    if (kategori.value == k5.value) {
+      komisyon = 0.2;
+    }
+    if (kategori.value == k6.value) {
+      komisyon = 0.21;
+    }
+    if (kategori.value == k7.value) {
+      komisyon = 0.23;
+    }
+    if (kategori.value == k8.value) {
+      komisyon = 0.16;
+    }
+    if (kategori.value == k9.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k10.value) {
+      komisyon = 0.18;
+    }
+    if (kategori.value == k11.value) {
+      komisyon = 0.16;
+    }
+    if (kategori.value == k12.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k13.value) {
+      komisyon = 0.13;
+    }
+    if (kategori.value == k14.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k15.value) {
+      komisyon = 0.14;
+    }
+    if (kategori.value == k16.value) {
+      komisyon = 0.08;
+    }
+    if (kategori.value == k17.value) {
+      komisyon = 0.12;
+    }
+    if (kategori.value == k18.value) {
+      komisyon = 0.14;
+    }
+    if (kategori.value == k19.value) {
+      komisyon = 0.1;
+    }
+    if (kategori.value == k20.value) {
+      komisyon = 0.1;
+    }
+    if (kategori.value == k21.value) {
+      komisyon = 0.2;
+    }
+    if (kategori.value == k22.value) {
+      komisyon = 0.12;
+    }
+    if (kategori.value == k23.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k24.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k25.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k26.value) {
+      komisyon = 0.1;
+    }
+    if (kategori.value == k27.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k28.value) {
+      komisyon = 0.1;
+    }
+    if (kategori.value == k29.value) {
+      komisyon = 0.13;
+    }
+    if (kategori.value == k30.value) {
+      komisyon = 0.13;
+    }
+    if (kategori.value == k31.value) {
+      komisyon = 0.06;
+    }
+    if (kategori.value == k32.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k33.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k34.value) {
+      komisyon = 0.12;
+    }
+    if (kategori.value == k35.value) {
+      komisyon = 0.1;
+    }
+    if (kategori.value == k36.value) {
+      komisyon = 0.05;
+    }
+    if (kategori.value == k37.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k38.value) {
+      komisyon = 0.25;
+    }
+    if (kategori.value == k39.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k40.value) {
+      komisyon = 0.08;
+    }
+    if (kategori.value == k41.value) {
+      komisyon = 0.1;
+    }
+    if (kategori.value == k42.value) {
+      komisyon = 0.12;
+    }
+    if (kategori.value == k43.value) {
+      komisyon = 0.11;
+    }
+    if (kategori.value == k44.value) {
+      komisyon = 0.13;
+    }
+    if (kategori.value == k45.value) {
+      komisyon = 0.07;
+    }
+    if (kategori.value == k46.value) {
+      komisyon = 0.1;
+    }
+    if (kategori.value == k47.value) {
+      komisyon = 0.1;
+    }
+    if (kategori.value == k48.value) {
+      komisyon = 0.19;
+    }
+    if (kategori.value == k49.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k50.value) {
+      komisyon = 0.165;
+    }
+    if (kategori.value == k51.value) {
+      komisyon = 0.18;
+    }
+    if (kategori.value == k52.value) {
+      komisyon = 0.22;
+    }
+    if (kategori.value == k53.value) {
+      komisyon = 0.2;
+    }
+    if (kategori.value == k54.value) {
+      komisyon = 0.18;
+    }
+    if (kategori.value == k55.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k56.value) {
+      komisyon = 0.2;
+    }
+    if (kategori.value == k57.value) {
+      komisyon = 0.175;
+    }
+    if (kategori.value == k58.value) {
+      komisyon = 0.14;
+    }
+    if (kategori.value == k59.value) {
+      komisyon = 0.18;
+    }
+    if (kategori.value == k60.value) {
+      komisyon = 0.17;
+    }
+    if (kategori.value == k61.value) {
+      komisyon = 0.125;
+    }
+    if (kategori.value == k62.value) {
+      komisyon = 0.125;
+    }
+    if (kategori.value == k63.value) {
+      komisyon = 0.125;
+    }
+    if (kategori.value == k64.value) {
+      komisyon = 0.125;
+    }
+    if (kategori.value == k65.value) {
+      komisyon = 0.13;
+    }
+    if (kategori.value == k66.value) {
+      komisyon = 0.12;
+    }
+    if (kategori.value == k67.value) {
+      komisyon = 0.18;
+    }
+    if (kategori.value == k68.value) {
+      komisyon = 0.2;
+    }
+    if (kategori.value == k69.value) {
+      komisyon = 0.18;
+    }
+    if (kategori.value == k70.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k71.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k72.value) {
+      komisyon = 0.14;
+    }
+    if (kategori.value == k73.value) {
+      komisyon = 0.21;
+    }
+    if (kategori.value == k74.value) {
+      komisyon = 0.17;
+    }
+    if (kategori.value == k75.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k76.value) {
+      komisyon = 0.16;
+    }
+    if (kategori.value == k77.value) {
+      komisyon = 0.16;
+    }
+    if (kategori.value == k78.value) {
+      komisyon = 0.16;
+    }
+    if (kategori.value == k79.value) {
+      komisyon = 0.07;
+    }
+    if (kategori.value == k80.value) {
+      komisyon = 0.16;
+    }
+    if (kategori.value == k81.value) {
+      komisyon = 0.16;
+    }
+    if (kategori.value == k82.value) {
+      komisyon = 0.1;
+    }
+    if (kategori.value == k83.value) {
+      komisyon = 0.11;
+    }
+    if (kategori.value == k84.value) {
+      komisyon = 0.14;
+    }
+    if (kategori.value == k85.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k86.value) {
+      komisyon = 0.15;
+    }
+    if (kategori.value == k87.value) {
+      komisyon = 0.1;
+    }
+    if (kategori.value == k88.value) {
+      komisyon = 0.12;
+    }
+    if (kategori.value == k89.value) {
+      komisyon = 0.17;
+    }
+    if (kategori.value == k90.value) {
+      komisyon = 0.17;
+    }
+    if (kategori.value == k91.value) {
+      komisyon = 0.15;
+    }
+  } else if (pazaryeri.value == pazaryeriHepsiburada.value) {
+    //!!
+    //********* HEPSİBURADA ************//
+    //!!
+    if (kategori.value == hpsbrdk1.value) {
+      komisyon = 0.04;
+    } else if (kategori.value == hpsbrdk2.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == hpsbrdk3.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk4.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk5.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk6.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk7.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == hpsbrdk8.value) {
+      komisyon = 0.13;
+    } else if (kategori.value == hpsbrdk9.value) {
+      komisyon = 0.13;
+    } else if (kategori.value == hpsbrdk10.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == hpsbrdk11.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == hpsbrdk12.value) {
+      komisyon = 0.13;
+    } else if (kategori.value == hpsbrdk13.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk14.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == hpsbrdk15.value) {
+      komisyon = 0.07;
+    } else if (kategori.value == hpsbrdk16.value) {
+      komisyon = 0.07;
+    } else if (kategori.value == hpsbrdk17.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == hpsbrdk18.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == hpsbrdk19.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == hpsbrdk20.value) {
+      komisyon = 0.115;
+    } else if (kategori.value == hpsbrdk21.value) {
+      komisyon = 0.075;
+    } else if (kategori.value == hpsbrdk22.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == hpsbrdk23.value) {
+      komisyon = 0.05;
+    } else if (kategori.value == hpsbrdk24.value) {
+      komisyon = 0.085;
+    } else if (kategori.value == hpsbrdk25.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == hpsbrdk26.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == hpsbrdk27.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk28.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk29.value) {
+      komisyon = 0.09;
+    } else if (kategori.value == hpsbrdk30.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == hpsbrdk31.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == hpsbrdk32.value) {
+      komisyon = 0.13;
+    } else if (kategori.value == hpsbrdk33.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk34.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == hpsbrdk35.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == hpsbrdk36.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == hpsbrdk37.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == hpsbrdk38.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == hpsbrdk39.value) {
+      komisyon = 0.085;
+    } else if (kategori.value == hpsbrdk40.value) {
+      komisyon = 0.07;
+    } else if (kategori.value == hpsbrdk41.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk42.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == hpsbrdk43.value) {
+      komisyon = 0.135;
+    } else if (kategori.value == hpsbrdk44.value) {
+      komisyon = 0.14;
+    } else if (kategori.value == hpsbrdk45.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == hpsbrdk46.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == hpsbrdk47.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == hpsbrdk48.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == hpsbrdk49.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == hpsbrdk50.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == hpsbrdk51.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == hpsbrdk52.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk53.value) {
+      komisyon = 0.125;
+    } else if (kategori.value == hpsbrdk54.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == hpsbrdk55.value) {
+      komisyon = 0.125;
+    } else if (kategori.value == hpsbrdk56.value) {
+      komisyon = 0.09;
+    } else if (kategori.value == hpsbrdk57.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == hpsbrdk58.value) {
+      komisyon = 0.125;
+    } else if (kategori.value == hpsbrdk59.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == hpsbrdk60.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == hpsbrdk61.value) {
+      komisyon = 0.16;
+    } else if (kategori.value == hpsbrdk62.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk63.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk64.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk65.value) {
+      komisyon = 0.16;
+    } else if (kategori.value == hpsbrdk66.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk67.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk68.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk69.value) {
+      komisyon = 0.16;
+    } else if (kategori.value == hpsbrdk70.value) {
+      komisyon = 0.125;
+    } else if (kategori.value == hpsbrdk71.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == hpsbrdk72.value) {
+      komisyon = 0.25;
+    } else if (kategori.value == hpsbrdk73.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == hpsbrdk74.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == hpsbrdk75.value) {
+      komisyon = 0.25;
+    } else if (kategori.value == hpsbrdk76.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == hpsbrdk77.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == hpsbrdk78.value) {
+      komisyon = 0.085;
+    } else if (kategori.value == hpsbrdk79.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == hpsbrdk80.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == hpsbrdk81.value) {
+      komisyon = 0.14;
+    } else if (kategori.value == hpsbrdk82.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == hpsbrdk83.value) {
+      komisyon = 0.05;
+    } else if (kategori.value == hpsbrdk84.value) {
+      komisyon = 0.14;
+    } else if (kategori.value == hpsbrdk85.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == hpsbrdk86.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == hpsbrdk87.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == hpsbrdk88.value) {
+      komisyon = 0.085;
+    } else if (kategori.value == hpsbrdk89.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == hpsbrdk90.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == hpsbrdk91.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == hpsbrdk92.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == hpsbrdk93.value) {
+      komisyon = 0.14;
+    } else if (kategori.value == hpsbrdk94.value) {
+      komisyon = 0.085;
+    } else if (kategori.value == hpsbrdk95.value) {
+      komisyon = 0.1;
+    }
+  } else if (pazaryeri.value == pazaryeriN11.value) {
+    //!!
+    //********* N11 ************//
+    //!!
+    if (kategori.value == n11k1.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k2.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k3.value) {
+      komisyon = 0.105;
+    } else if (kategori.value == n11k4.value) {
+      komisyon = 0.105;
+    } else if (kategori.value == n11k5.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k6.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k7.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == n11k8.value) {
+      komisyon = 0.13;
+    } else if (kategori.value == n11k9.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k10.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k11.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k12.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k13.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k14.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k15.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k16.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k17.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == n11k18.value) {
+      komisyon = 0.152;
+    } else if (kategori.value == n11k19.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == n11k20.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k21.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k22.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k23.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k24.value) {
+      komisyon = 0.151;
+    } else if (kategori.value == n11k25.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k26.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k27.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k28.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k29.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k30.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k31.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k32.value) {
+      komisyon = 0.1512;
+    } else if (kategori.value == n11k33.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k34.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k35.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == n11k36.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k37.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k38.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k39.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k40.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k41.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k42.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k43.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k44.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k45.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k46.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k47.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k48.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == n11k49.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k50.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k51.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k52.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k53.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k54.value) {
+      komisyon = 0.05;
+    } else if (kategori.value == n11k55.value) {
+      komisyon = 0.105;
+    } else if (kategori.value == n11k56.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k57.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k58.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k59.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k60.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k61.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == n11k62.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k63.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k64.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k65.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == n11k66.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k67.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k68.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k69.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k70.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k71.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k72.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k73.value) {
+      komisyon = 0.03;
+    } else if (kategori.value == n11k74.value) {
+      komisyon = 0.075;
+    } else if (kategori.value == n11k75.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k76.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k77.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k78.value) {
+      komisyon = 0.055;
+    } else if (kategori.value == n11k79.value) {
+      komisyon = 0.25;
+    } else if (kategori.value == n11k80.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k81.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k82.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k83.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k84.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k85.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k86.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k87.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k88.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k89.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k90.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k91.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == n11k92.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k93.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == n11k94.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k95.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k96.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k97.value) {
+      komisyon = 0.2515;
+    } else if (kategori.value == n11k98.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k99.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k100.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k101.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k102.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k103.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k104.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k105.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k106.value) {
+      komisyon = 0.055;
+    } else if (kategori.value == n11k107.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k108.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k109.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k110.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k111.value) {
+      komisyon = 0.071;
+    } else if (kategori.value == n11k112.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k113.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k114.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k115.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k116.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k117.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k118.value) {
+      komisyon = 0.1;
+      // } else if (kategori.value == n11k119.value) {
+      //   komisyon = 0.1;
+    } else if (kategori.value == n11k120.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k121.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k122.value) {
+      komisyon = 0.055;
+    } else if (kategori.value == n11k123.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k124.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k125.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k126.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k127.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k128.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k129.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k130.value) {
+      komisyon = 0;
+    } else if (kategori.value == n11k131.value) {
+      komisyon = 0.05;
+    } else if (kategori.value == n11k132.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k133.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k134.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k135.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k136.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k137.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == n11k138.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == n11k139.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k140.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k141.value) {
+      komisyon = 0.155;
+    } else if (kategori.value == n11k142.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k143.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k144.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k145.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k146.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k147.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k148.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k149.value) {
+      komisyon = 0.151;
+    } else if (kategori.value == n11k150.value) {
+      komisyon = 0.151;
+    } else if (kategori.value == n11k151.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k152.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k153.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k154.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k155.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k156.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k157.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k158.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k159.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k160.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k161.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k162.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k163.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k164.value) {
+      komisyon = 0.151;
+    } else if (kategori.value == n11k165.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k166.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k167.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k168.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k169.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k170.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k171.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k172.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k173.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k174.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k175.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k176.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == n11k177.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k178.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k179.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k180.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k181.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k182.value) {
+      komisyon = 0.07;
+    } else if (kategori.value == n11k183.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == n11k184.value) {
+      komisyon = 0.108;
+    } else if (kategori.value == n11k185.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k186.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k187.value) {
+      komisyon = 0.065;
+    } else if (kategori.value == n11k188.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k189.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k190.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k191.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k192.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k193.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k194.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k195.value) {
+      komisyon = 0.151;
+    } else if (kategori.value == n11k196.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k197.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k198.value) {
+      komisyon = 0.1012;
+    } else if (kategori.value == n11k199.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k200.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k201.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k202.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k203.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k204.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k205.value) {
+      komisyon = 0.1512;
+    } else if (kategori.value == n11k206.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k207.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k208.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k209.value) {
+      komisyon = 0.05;
+    } else if (kategori.value == n11k210.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k211.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k212.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k213.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == n11k214.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k215.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k216.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k217.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k218.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k219.value) {
+      komisyon = 0.106;
+    } else if (kategori.value == n11k220.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k221.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k222.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k223.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k224.value) {
+      komisyon = 0.13;
+    } else if (kategori.value == n11k225.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k226.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k227.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k228.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k229.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k230.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k231.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k232.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == n11k233.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k234.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k235.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k236.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k237.value) {
+      komisyon = 0.106;
+    } else if (kategori.value == n11k238.value) {
+      komisyon = 0.151;
+    } else if (kategori.value == n11k239.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k240.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k241.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k242.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k243.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k244.value) {
+      komisyon = 0.25;
+    } else if (kategori.value == n11k245.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k246.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k247.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k248.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k249.value) {
+      komisyon = 0.0615;
+    } else if (kategori.value == n11k250.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k251.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k252.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k253.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k254.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k255.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k256.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k257.value) {
+      komisyon = 0.12;
+    } else if (kategori.value == n11k258.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k259.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k260.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k261.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k262.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k263.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k264.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k265.value) {
+      komisyon = 0.055;
+    } else if (kategori.value == n11k266.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k267.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k268.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k269.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k270.value) {
+      komisyon = 0.1512;
+    } else if (kategori.value == n11k271.value) {
+      komisyon = 0.17;
+    } else if (kategori.value == n11k272.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k273.value) {
+      komisyon = 0.05;
+    } else if (kategori.value == n11k274.value) {
+      komisyon = 0.106;
+    } else if (kategori.value == n11k275.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == n11k276.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k277.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == n11k278.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k279.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k280.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == n11k281.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k282.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k283.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == n11k284.value) {
+      komisyon = 0.15;
+    }
+  } else if (pazaryeri.value == pazaryeriCiceksepeti.value) {
+    //!!
+    //********* Çiçek Sepeti ************//
+    //!!
+    if (kategori.value == ciceksptk1.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == ciceksptk2.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == ciceksptk3.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == ciceksptk4.value) {
+      komisyon = 0.08;
+    } else if (kategori.value == ciceksptk5.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == ciceksptk6.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == ciceksptk7.value) {
+      komisyon = 0.05;
+    } else if (kategori.value == ciceksptk8.value) {
+      komisyon = 0.16;
+    } else if (kategori.value == ciceksptk9.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == ciceksptk10.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == ciceksptk11.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == ciceksptk12.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == ciceksptk13.value) {
+      komisyon = 0.25;
+    } else if (kategori.value == ciceksptk14.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == ciceksptk15.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == ciceksptk16.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == ciceksptk17.value) {
+      komisyon = 0.18;
+    } else if (kategori.value == ciceksptk18.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == ciceksptk19.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == ciceksptk20.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == ciceksptk21.value) {
+      komisyon = 0.15;
+    } else if (kategori.value == ciceksptk22.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == ciceksptk23.value) {
+      komisyon = 0.2;
+    } else if (kategori.value == ciceksptk24.value) {
+      komisyon = 0.3;
+    } else if (kategori.value == ciceksptk25.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == ciceksptk26.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == ciceksptk27.value) {
+      komisyon = 0.15;
+    }
+  } else {
     // !!!!!!!!!!!!!!!!!!!!!!!!!!
     //-----------AMAZON-----------
     // !!!!!!!!!!!!!!!!!!!!!!!!!!
-    const amznk1 = document.getElementById("amznk1");
-    const amznk2 = document.getElementById("amznk2");
-    const amznk3 = document.getElementById("amznk3");
-    const amznk4 = document.getElementById("amznk4");
-    const amznk5 = document.getElementById("amznk5");
-    const amznk6 = document.getElementById("amznk6");
-    const amznk7 = document.getElementById("amznk7");
-    const amznk8 = document.getElementById("amznk8");
-    const amznk9 = document.getElementById("amznk9");
-    const amznk10 = document.getElementById("amznk10");
-    const amznk11 = document.getElementById("amznk11");
-    const amznk12 = document.getElementById("amznk12");
-    const amznk13 = document.getElementById("amznk13");
-    const amznk14 = document.getElementById("amznk14");
-    const amznk15 = document.getElementById("amznk15");
-    //!!
-    //********* TRENDYOL ************//
-    //!!
-    if (pazaryeri.value == pazaryeriTrendyol.value) {
-      if (kategori.value == k1.value) {
-        komisyon = 0.05;
-      }
-      if (kategori.value == k2.value) {
-        komisyon = 0.21;
-      }
-      if (kategori.value == k3.value) {
-        komisyon = 0.21;
-      }
-      if (kategori.value == k4.value) {
-        komisyon = 0.22;
-      }
-      if (kategori.value == k5.value) {
-        komisyon = 0.2;
-      }
-      if (kategori.value == k6.value) {
-        komisyon = 0.21;
-      }
-      if (kategori.value == k7.value) {
-        komisyon = 0.23;
-      }
-      if (kategori.value == k8.value) {
-        komisyon = 0.16;
-      }
-      if (kategori.value == k9.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k10.value) {
-        komisyon = 0.18;
-      }
-      if (kategori.value == k11.value) {
-        komisyon = 0.16;
-      }
-      if (kategori.value == k12.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k13.value) {
-        komisyon = 0.13;
-      }
-      if (kategori.value == k14.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k15.value) {
-        komisyon = 0.14;
-      }
-      if (kategori.value == k16.value) {
-        komisyon = 0.08;
-      }
-      if (kategori.value == k17.value) {
-        komisyon = 0.12;
-      }
-      if (kategori.value == k18.value) {
-        komisyon = 0.14;
-      }
-      if (kategori.value == k19.value) {
-        komisyon = 0.1;
-      }
-      if (kategori.value == k20.value) {
-        komisyon = 0.1;
-      }
-      if (kategori.value == k21.value) {
-        komisyon = 0.2;
-      }
-      if (kategori.value == k22.value) {
-        komisyon = 0.12;
-      }
-      if (kategori.value == k23.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k24.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k25.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k26.value) {
-        komisyon = 0.1;
-      }
-      if (kategori.value == k27.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k28.value) {
-        komisyon = 0.1;
-      }
-      if (kategori.value == k29.value) {
-        komisyon = 0.13;
-      }
-      if (kategori.value == k30.value) {
-        komisyon = 0.13;
-      }
-      if (kategori.value == k31.value) {
-        komisyon = 0.06;
-      }
-      if (kategori.value == k32.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k33.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k34.value) {
-        komisyon = 0.12;
-      }
-      if (kategori.value == k35.value) {
-        komisyon = 0.1;
-      }
-      if (kategori.value == k36.value) {
-        komisyon = 0.05;
-      }
-      if (kategori.value == k37.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k38.value) {
-        komisyon = 0.25;
-      }
-      if (kategori.value == k39.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k40.value) {
-        komisyon = 0.08;
-      }
-      if (kategori.value == k41.value) {
-        komisyon = 0.1;
-      }
-      if (kategori.value == k42.value) {
-        komisyon = 0.12;
-      }
-      if (kategori.value == k43.value) {
-        komisyon = 0.11;
-      }
-      if (kategori.value == k44.value) {
-        komisyon = 0.13;
-      }
-      if (kategori.value == k45.value) {
-        komisyon = 0.07;
-      }
-      if (kategori.value == k46.value) {
-        komisyon = 0.1;
-      }
-      if (kategori.value == k47.value) {
-        komisyon = 0.1;
-      }
-      if (kategori.value == k48.value) {
-        komisyon = 0.19;
-      }
-      if (kategori.value == k49.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k50.value) {
-        komisyon = 0.165;
-      }
-      if (kategori.value == k51.value) {
-        komisyon = 0.18;
-      }
-      if (kategori.value == k52.value) {
-        komisyon = 0.22;
-      }
-      if (kategori.value == k53.value) {
-        komisyon = 0.2;
-      }
-      if (kategori.value == k54.value) {
-        komisyon = 0.18;
-      }
-      if (kategori.value == k55.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k56.value) {
-        komisyon = 0.2;
-      }
-      if (kategori.value == k57.value) {
-        komisyon = 0.175;
-      }
-      if (kategori.value == k58.value) {
-        komisyon = 0.14;
-      }
-      if (kategori.value == k59.value) {
-        komisyon = 0.18;
-      }
-      if (kategori.value == k60.value) {
-        komisyon = 0.17;
-      }
-      if (kategori.value == k61.value) {
-        komisyon = 0.125;
-      }
-      if (kategori.value == k62.value) {
-        komisyon = 0.125;
-      }
-      if (kategori.value == k63.value) {
-        komisyon = 0.125;
-      }
-      if (kategori.value == k64.value) {
-        komisyon = 0.125;
-      }
-      if (kategori.value == k65.value) {
-        komisyon = 0.13;
-      }
-      if (kategori.value == k66.value) {
-        komisyon = 0.12;
-      }
-      if (kategori.value == k67.value) {
-        komisyon = 0.18;
-      }
-      if (kategori.value == k68.value) {
-        komisyon = 0.2;
-      }
-      if (kategori.value == k69.value) {
-        komisyon = 0.18;
-      }
-      if (kategori.value == k70.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k71.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k72.value) {
-        komisyon = 0.14;
-      }
-      if (kategori.value == k73.value) {
-        komisyon = 0.21;
-      }
-      if (kategori.value == k74.value) {
-        komisyon = 0.17;
-      }
-      if (kategori.value == k75.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k76.value) {
-        komisyon = 0.16;
-      }
-      if (kategori.value == k77.value) {
-        komisyon = 0.16;
-      }
-      if (kategori.value == k78.value) {
-        komisyon = 0.16;
-      }
-      if (kategori.value == k79.value) {
-        komisyon = 0.07;
-      }
-      if (kategori.value == k80.value) {
-        komisyon = 0.16;
-      }
-      if (kategori.value == k81.value) {
-        komisyon = 0.16;
-      }
-      if (kategori.value == k82.value) {
-        komisyon = 0.1;
-      }
-      if (kategori.value == k83.value) {
-        komisyon = 0.11;
-      }
-      if (kategori.value == k84.value) {
-        komisyon = 0.14;
-      }
-      if (kategori.value == k85.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k86.value) {
-        komisyon = 0.15;
-      }
-      if (kategori.value == k87.value) {
-        komisyon = 0.1;
-      }
-      if (kategori.value == k88.value) {
-        komisyon = 0.12;
-      }
-      if (kategori.value == k89.value) {
-        komisyon = 0.17;
-      }
-      if (kategori.value == k90.value) {
-        komisyon = 0.17;
-      }
-      if (kategori.value == k91.value) {
-        komisyon = 0.15;
-      }
-    } else if (pazaryeri.value == pazaryeriHepsiburada.value) {
-      //!!
-      //********* HEPSİBURADA ************//
-      //!!
-      if (kategori.value == hpsbrdk1.value) {
-        komisyon = 0.04;
-      } else if (kategori.value == hpsbrdk2.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == hpsbrdk3.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk4.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk5.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk6.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk7.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == hpsbrdk8.value) {
-        komisyon = 0.13;
-      } else if (kategori.value == hpsbrdk9.value) {
-        komisyon = 0.13;
-      } else if (kategori.value == hpsbrdk10.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == hpsbrdk11.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == hpsbrdk12.value) {
-        komisyon = 0.13;
-      } else if (kategori.value == hpsbrdk13.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk14.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == hpsbrdk15.value) {
-        komisyon = 0.07;
-      } else if (kategori.value == hpsbrdk16.value) {
-        komisyon = 0.07;
-      } else if (kategori.value == hpsbrdk17.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == hpsbrdk18.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == hpsbrdk19.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == hpsbrdk20.value) {
-        komisyon = 0.115;
-      } else if (kategori.value == hpsbrdk21.value) {
-        komisyon = 0.075;
-      } else if (kategori.value == hpsbrdk22.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == hpsbrdk23.value) {
-        komisyon = 0.05;
-      } else if (kategori.value == hpsbrdk24.value) {
-        komisyon = 0.085;
-      } else if (kategori.value == hpsbrdk25.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == hpsbrdk26.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == hpsbrdk27.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk28.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk29.value) {
-        komisyon = 0.09;
-      } else if (kategori.value == hpsbrdk30.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == hpsbrdk31.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == hpsbrdk32.value) {
-        komisyon = 0.13;
-      } else if (kategori.value == hpsbrdk33.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk34.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == hpsbrdk35.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == hpsbrdk36.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == hpsbrdk37.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == hpsbrdk38.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == hpsbrdk39.value) {
-        komisyon = 0.085;
-      } else if (kategori.value == hpsbrdk40.value) {
-        komisyon = 0.07;
-      } else if (kategori.value == hpsbrdk41.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk42.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == hpsbrdk43.value) {
-        komisyon = 0.135;
-      } else if (kategori.value == hpsbrdk44.value) {
-        komisyon = 0.14;
-      } else if (kategori.value == hpsbrdk45.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == hpsbrdk46.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == hpsbrdk47.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == hpsbrdk48.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == hpsbrdk49.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == hpsbrdk50.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == hpsbrdk51.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == hpsbrdk52.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk53.value) {
-        komisyon = 0.125;
-      } else if (kategori.value == hpsbrdk54.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == hpsbrdk55.value) {
-        komisyon = 0.125;
-      } else if (kategori.value == hpsbrdk56.value) {
-        komisyon = 0.09;
-      } else if (kategori.value == hpsbrdk57.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == hpsbrdk58.value) {
-        komisyon = 0.125;
-      } else if (kategori.value == hpsbrdk59.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == hpsbrdk60.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == hpsbrdk61.value) {
-        komisyon = 0.16;
-      } else if (kategori.value == hpsbrdk62.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk63.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk64.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk65.value) {
-        komisyon = 0.16;
-      } else if (kategori.value == hpsbrdk66.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk67.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk68.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk69.value) {
-        komisyon = 0.16;
-      } else if (kategori.value == hpsbrdk70.value) {
-        komisyon = 0.125;
-      } else if (kategori.value == hpsbrdk71.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == hpsbrdk72.value) {
-        komisyon = 0.25;
-      } else if (kategori.value == hpsbrdk73.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == hpsbrdk74.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == hpsbrdk75.value) {
-        komisyon = 0.25;
-      } else if (kategori.value == hpsbrdk76.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == hpsbrdk77.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == hpsbrdk78.value) {
-        komisyon = 0.085;
-      } else if (kategori.value == hpsbrdk79.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == hpsbrdk80.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == hpsbrdk81.value) {
-        komisyon = 0.14;
-      } else if (kategori.value == hpsbrdk82.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == hpsbrdk83.value) {
-        komisyon = 0.05;
-      } else if (kategori.value == hpsbrdk84.value) {
-        komisyon = 0.14;
-      } else if (kategori.value == hpsbrdk85.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == hpsbrdk86.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == hpsbrdk87.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == hpsbrdk88.value) {
-        komisyon = 0.085;
-      } else if (kategori.value == hpsbrdk89.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == hpsbrdk90.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == hpsbrdk91.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == hpsbrdk92.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == hpsbrdk93.value) {
-        komisyon = 0.14;
-      } else if (kategori.value == hpsbrdk94.value) {
-        komisyon = 0.085;
-      } else if (kategori.value == hpsbrdk95.value) {
-        komisyon = 0.1;
-      }
-    } else if (pazaryeri.value == pazaryeriN11.value) {
-      //!!
-      //********* N11 ************//
-      //!!
-      if (kategori.value == n11k1.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k2.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k3.value) {
-        komisyon = 0.105;
-      } else if (kategori.value == n11k4.value) {
-        komisyon = 0.105;
-      } else if (kategori.value == n11k5.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k6.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k7.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == n11k8.value) {
-        komisyon = 0.13;
-      } else if (kategori.value == n11k9.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k10.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k11.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k12.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k13.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k14.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k15.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k16.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k17.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == n11k18.value) {
-        komisyon = 0.152;
-      } else if (kategori.value == n11k19.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == n11k20.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k21.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k22.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k23.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k24.value) {
-        komisyon = 0.151;
-      } else if (kategori.value == n11k25.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k26.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k27.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k28.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k29.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k30.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k31.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k32.value) {
-        komisyon = 0.1512;
-      } else if (kategori.value == n11k33.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k34.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k35.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == n11k36.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k37.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k38.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k39.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k40.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k41.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k42.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k43.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k44.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k45.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k46.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k47.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k48.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == n11k49.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k50.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k51.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k52.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k53.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k54.value) {
-        komisyon = 0.05;
-      } else if (kategori.value == n11k55.value) {
-        komisyon = 0.105;
-      } else if (kategori.value == n11k56.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k57.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k58.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k59.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k60.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k61.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == n11k62.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k63.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k64.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k65.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == n11k66.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k67.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k68.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k69.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k70.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k71.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k72.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k73.value) {
-        komisyon = 0.03;
-      } else if (kategori.value == n11k74.value) {
-        komisyon = 0.075;
-      } else if (kategori.value == n11k75.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k76.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k77.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k78.value) {
-        komisyon = 0.055;
-      } else if (kategori.value == n11k79.value) {
-        komisyon = 0.25;
-      } else if (kategori.value == n11k80.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k81.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k82.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k83.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k84.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k85.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k86.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k87.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k88.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k89.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k90.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k91.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == n11k92.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k93.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == n11k94.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k95.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k96.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k97.value) {
-        komisyon = 0.2515;
-      } else if (kategori.value == n11k98.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k99.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k100.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k101.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k102.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k103.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k104.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k105.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k106.value) {
-        komisyon = 0.055;
-      } else if (kategori.value == n11k107.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k108.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k109.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k110.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k111.value) {
-        komisyon = 0.071;
-      } else if (kategori.value == n11k112.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k113.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k114.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k115.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k116.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k117.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k118.value) {
-        komisyon = 0.1;
-        // } else if (kategori.value == n11k119.value) {
-        //   komisyon = 0.1;
-      } else if (kategori.value == n11k120.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k121.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k122.value) {
-        komisyon = 0.055;
-      } else if (kategori.value == n11k123.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k124.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k125.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k126.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k127.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k128.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k129.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k130.value) {
-        komisyon = 0;
-      } else if (kategori.value == n11k131.value) {
-        komisyon = 0.05;
-      } else if (kategori.value == n11k132.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k133.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k134.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k135.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k136.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k137.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == n11k138.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == n11k139.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k140.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k141.value) {
-        komisyon = 0.155;
-      } else if (kategori.value == n11k142.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k143.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k144.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k145.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k146.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k147.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k148.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k149.value) {
-        komisyon = 0.151;
-      } else if (kategori.value == n11k150.value) {
-        komisyon = 0.151;
-      } else if (kategori.value == n11k151.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k152.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k153.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k154.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k155.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k156.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k157.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k158.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k159.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k160.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k161.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k162.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k163.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k164.value) {
-        komisyon = 0.151;
-      } else if (kategori.value == n11k165.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k166.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k167.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k168.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k169.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k170.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k171.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k172.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k173.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k174.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k175.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k176.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == n11k177.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k178.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k179.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k180.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k181.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k182.value) {
-        komisyon = 0.07;
-      } else if (kategori.value == n11k183.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == n11k184.value) {
-        komisyon = 0.108;
-      } else if (kategori.value == n11k185.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k186.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k187.value) {
-        komisyon = 0.065;
-      } else if (kategori.value == n11k188.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k189.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k190.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k191.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k192.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k193.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k194.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k195.value) {
-        komisyon = 0.151;
-      } else if (kategori.value == n11k196.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k197.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k198.value) {
-        komisyon = 0.1012;
-      } else if (kategori.value == n11k199.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k200.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k201.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k202.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k203.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k204.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k205.value) {
-        komisyon = 0.1512;
-      } else if (kategori.value == n11k206.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k207.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k208.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k209.value) {
-        komisyon = 0.05;
-      } else if (kategori.value == n11k210.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k211.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k212.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k213.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == n11k214.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k215.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k216.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k217.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k218.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k219.value) {
-        komisyon = 0.106;
-      } else if (kategori.value == n11k220.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k221.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k222.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k223.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k224.value) {
-        komisyon = 0.13;
-      } else if (kategori.value == n11k225.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k226.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k227.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k228.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k229.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k230.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k231.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k232.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == n11k233.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k234.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k235.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k236.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k237.value) {
-        komisyon = 0.106;
-      } else if (kategori.value == n11k238.value) {
-        komisyon = 0.151;
-      } else if (kategori.value == n11k239.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k240.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k241.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k242.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k243.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k244.value) {
-        komisyon = 0.25;
-      } else if (kategori.value == n11k245.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k246.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k247.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k248.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k249.value) {
-        komisyon = 0.0615;
-      } else if (kategori.value == n11k250.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k251.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k252.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k253.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k254.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k255.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k256.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k257.value) {
-        komisyon = 0.12;
-      } else if (kategori.value == n11k258.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k259.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k260.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k261.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k262.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k263.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k264.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k265.value) {
-        komisyon = 0.055;
-      } else if (kategori.value == n11k266.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k267.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k268.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k269.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k270.value) {
-        komisyon = 0.1512;
-      } else if (kategori.value == n11k271.value) {
-        komisyon = 0.17;
-      } else if (kategori.value == n11k272.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k273.value) {
-        komisyon = 0.05;
-      } else if (kategori.value == n11k274.value) {
-        komisyon = 0.106;
-      } else if (kategori.value == n11k275.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == n11k276.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k277.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == n11k278.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k279.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k280.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == n11k281.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k282.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k283.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == n11k284.value) {
-        komisyon = 0.15;
-      }
-    } else if (pazaryeri.value == pazaryeriCiceksepeti.value) {
-      //!!
-      //********* Çiçek Sepeti ************//
-      //!!
-      if (kategori.value == ciceksptk1.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == ciceksptk2.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == ciceksptk3.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == ciceksptk4.value) {
-        komisyon = 0.08;
-      } else if (kategori.value == ciceksptk5.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == ciceksptk6.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == ciceksptk7.value) {
-        komisyon = 0.05;
-      } else if (kategori.value == ciceksptk8.value) {
-        komisyon = 0.16;
-      } else if (kategori.value == ciceksptk9.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == ciceksptk10.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == ciceksptk11.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == ciceksptk12.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == ciceksptk13.value) {
-        komisyon = 0.25;
-      } else if (kategori.value == ciceksptk14.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == ciceksptk15.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == ciceksptk16.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == ciceksptk17.value) {
-        komisyon = 0.18;
-      } else if (kategori.value == ciceksptk18.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == ciceksptk19.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == ciceksptk20.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == ciceksptk21.value) {
-        komisyon = 0.15;
-      } else if (kategori.value == ciceksptk22.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == ciceksptk23.value) {
-        komisyon = 0.2;
-      } else if (kategori.value == ciceksptk24.value) {
-        komisyon = 0.3;
-      } else if (kategori.value == ciceksptk25.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == ciceksptk26.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == ciceksptk27.value) {
-        komisyon = 0.15;
-      }
-    } else {
-      // !!!!!!!!!!!!!!!!!!!!!!!!!!
-      //-----------AMAZON-----------
-      // !!!!!!!!!!!!!!!!!!!!!!!!!!
-      if (kategori.value == amznk1.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == amznk2.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == amznk3.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == amznk4.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == amznk5.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == amznk6.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == amznk7.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == amznk8.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == amznk9.value) {
-        komisyon = 0.06;
-      } else if (kategori.value == amznk10.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == amznk11.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == amznk12.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == amznk13.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == amznk14.value) {
-        komisyon = 0.1;
-      } else if (kategori.value == amznk15.value) {
-        komisyon = 0.1;
-      }
+    if (kategori.value == amznk1.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == amznk2.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == amznk3.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == amznk4.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == amznk5.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == amznk6.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == amznk7.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == amznk8.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == amznk9.value) {
+      komisyon = 0.06;
+    } else if (kategori.value == amznk10.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == amznk11.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == amznk12.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == amznk13.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == amznk14.value) {
+      komisyon = 0.1;
+    } else if (kategori.value == amznk15.value) {
+      komisyon = 0.1;
     }
-
-    let KDVsiz_fiyat = satisInput.value / (1 + kdv);
-    let komisyonHesaplama = KDVsiz_fiyat * komisyon;
-    let kargoHesaplama = kargoInput.value / 1.18;
-    let netKar =
-      KDVsiz_fiyat - alisInput.value - komisyonHesaplama - kargoHesaplama;
-    komisyonOrani.innerHTML = `% ${(komisyon * 100).toFixed(1)}`;
-    satisKdvDahil.innerHTML = `${satisInput.value} ₺`;
-    satisKdvHaric.innerHTML = `${KDVsiz_fiyat.toFixed(2)} ₺`;
-    alisFiyati.innerHTML = `${alisInput.value} ₺`;
-    komisyonKesinti.innerHTML = `${komisyonHesaplama.toFixed(2)} ₺`;
-    kargoTutari.innerHTML = `${kargoHesaplama.toFixed(2)}`;
-    if (netKar > 0) {
-      netkarSonuc.innerHTML = `<b>${netKar.toFixed(2)} ₺</b>`;
-    } else {
-      netkarSonuc.innerHTML = `<b style="color: blue;">${netKar.toFixed(
-        2
-      )} TL  Zarardasınız !</b>`;
-    }
-  });
+  }
+  let KDVsiz_fiyat = satisInput.value / (1 + kdv);
+  let komisyonHesaplama = KDVsiz_fiyat * komisyon;
+  let kargoHesaplama = kargoInput.value / 1.18;
+  let netKar =
+    KDVsiz_fiyat - alisInput.value - komisyonHesaplama - kargoHesaplama;
+  komisyonOrani.innerHTML = `% ${(komisyon * 100).toFixed(1)}`;
+  satisKdvDahil.innerHTML = `${satisInput.value} ₺`;
+  satisKdvHaric.innerHTML = `${KDVsiz_fiyat.toFixed(2)} ₺`;
+  alisFiyati.innerHTML = `${alisInput.value} ₺`;
+  komisyonKesinti.innerHTML = `${komisyonHesaplama.toFixed(2)} ₺`;
+  kargoTutari.innerHTML = `${kargoHesaplama.toFixed(2)}`;
+  if (netKar > 0) {
+    netkarSonuc.innerHTML = `<b>${netKar.toFixed(2)} ₺</b>`;
+  } else {
+    netkarSonuc.innerHTML = `<b style="color: blue;">${netKar.toFixed(
+      2
+    )} TL  Zarardasınız !</b>`;
+  }
 });
