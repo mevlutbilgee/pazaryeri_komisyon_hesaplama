@@ -8,91 +8,108 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Pazaryeri Komisyonlarını Hesaplayın!</h1>
-    <p>
-      Pazaryeri komisyon hesaplama aracımız ile satış yaptığınız kategorilerdeki
-      komisyon oranınızı ve karlılığınızı kolayca hesaplayın.
-    </p>
-    <br />
-    <label for="pazaryeri">Pazaryeri</label>
-    <br />
-    <select name="pazaryeri" id="pazaryeri">
-      <option value=""></option>
-      <option id="pazaryeriTrendyol" value="Trendyol">Trendyol</option>
-      <option id="pazaryeriHepsiburada" value="Hepsiburada">Hepsiburada</option>
-      <option id="pazaryeriN11" value="n11">n11</option>
-      <option id="pazaryeriCiceksepeti" value="Çiçek Sepeti">
-        Çiçek Sepeti
-      </option>
-      <option id="pazaryeriAmazon" value="Amazon">Amazon</option>
-    </select>
-    <br /><br /><br />
-    <label for="kategori">Ürün Kategorisi</label>
-    <br />
-    <input
-      list="kategoriList"
-      type="search"
-      name=""
-      id="kategori"
-      placeholder=" Ürün Kategorisi Ara"
-    />
-    <datalist id="kategoriList"></datalist>
-    <!-- <select name="kategori" id="kategori" ></select>  -->
-    <!-- </select> -->
-    <br /><br /><br />
-    <label for="alisInput">Alış Fiyatı (KDV dahil)</label>
-    <br />
-    <input type="number" id="alisInput" placeholder="₺" />
-    <br /><br /><br />
-    <label for="satisInput">Satış Fiyatı (KDV dahil)</label>
-    <br />
-    <input type="number" id="satisInput" placeholder="₺" />
-    <br /><br /><br />
-    <label for="">KDV miktarı</label>
-    <br />
-    <button class="kdvbtn" id="kdv0">0</button>
-    <button class="kdvbtn" id="kdv1">1</button>
-    <button class="kdvbtn" id="kdv8">8</button>
-    <button class="kdvbtn" id="kdv18">18</button>
-    <p id="kdvBox">Seçilen KDV :</p>
-    <br /><br />
-    <label for="">Kargo Ücreti (KDV dahil)</label>
-    <br />
-    <input type="number" id="kargoInput" placeholder="₺" />
-    <br /><br />
-    <button id="btnHesaplama">Hesapla</button>
-    <br /><br />
-    <div id="sonucBox">
-      <h2 id="sonucBaslik">Hesaplama Sonucu :</h2>
-      <div class="box">
-        <p class="text">Komisyon oranı :</p>
-        <p class="sonuc" id="komisyonOrani"></p>
+    <div id="container">
+      <h1>Pazaryeri Komisyonlarını Hesaplayın!</h1>
+      <p>
+        Pazaryeri komisyon hesaplama aracımız ile satış yaptığınız
+        kategorilerdeki komisyon oranınızı ve karlılığınızı kolayca hesaplayın.
+      </p>
+      <br />
+      <label for="pazaryeri">Pazaryeri</label>
+      <br />
+      <select name="pazaryeri" id="pazaryeri">
+        <option value=""></option>
+        <option id="pazaryeriTrendyol" value="Trendyol">Trendyol</option>
+        <option id="pazaryeriHepsiburada" value="Hepsiburada">
+          Hepsiburada
+        </option>
+        <option id="pazaryeriN11" value="n11">n11</option>
+        <option id="pazaryeriCiceksepeti" value="Çiçek Sepeti">
+          Çiçek Sepeti
+        </option>
+        <option id="pazaryeriAmazon" value="Amazon">Amazon</option>
+      </select>
+      <br /><br /><br />
+      <label for="kategori">Ürün Kategorisi</label>
+      <br />
+      <input
+        list="kategoriList"
+        type="search"
+        name=""
+        id="kategori"
+        placeholder=" Ürün Kategorisi Ara"
+      />
+      <datalist id="kategoriList"></datalist>
+      <!-- <select name="kategori" id="kategori" ></select>  -->
+      <!-- </select> -->
+      <br /><br /><br />
+      <label for="alisInput">Alış Fiyatı (KDV dahil)</label>
+      <br />
+      <input type="number" id="alisInput" placeholder="₺ Fiyat giriniz" />
+      <br /><br /><br />
+      <label for="satisInput">Satış Fiyatı (KDV dahil)</label>
+      <br />
+      <input type="number" id="satisInput" placeholder="₺ Fiyat giriniz" />
+      <br /><br /><br />
+
+      <div id="kargoVkdv">
+        <div id="kdvcontainer">
+          <label for="">KDV miktarı</label>
+          <br />
+          <select name="" id="kdvsel">
+            <option value=""></option>
+            <option value="1" id="kdv1">1</option>
+            <option value="8" id="kdv8">8</option>
+            <option value="18" id="kdv18">18</option>
+          </select>
+        </div>
+        <div id="kargocontainer">
+          <label for="">Kargo Ücreti (KDV dahil)</label>
+          <br />
+          <input type="number" id="kargoInput" placeholder="₺ Fiyat giriniz" />
+        </div>
       </div>
-      <div class="box">
-        <p class="text">Satış Fiyatı (KDV Dahil) :</p>
-        <p class="sonuc" id="satisKdvDahil"></p>
+
+      <br /><br />
+      <div class="buttons">
+        <a id="btnTemizle">Temizle</a>
+        <button id="btnHesaplama">Hesapla</button>
       </div>
-      <div class="box">
-        <p class="text">Satış Fiyatı (KDV Hariç) :</p>
-        <p class="sonuc" id="satisKdvHaric"></p>
-      </div>
-      <div class="box">
-        <p class="text">Alış Fiyatı :</p>
-        <p class="sonuc" id="alisFiyati"></p>
-      </div>
-      <div class="box">
-        <p class="text">Komisyon kesintisi :</p>
-        <p class="sonuc" id="komisyonKesinti"></p>
-      </div>
-      <div class="box">
-        <p class="text">Kargo Tutarı :</p>
-        <p class="sonuc" id="kargoTutari"></p>
-      </div>
-      <div class="box">
-        <p class="text">Net Kâr :</p>
-        <p class="sonuc" id="netkarSonuc"></p>
+
+      <br /><br />
+      <div id="sonucBox">
+        <h2 id="sonucBaslik">Hesaplama Sonucu :</h2>
+        <div class="box">
+          <p class="text">Komisyon oranı :</p>
+          <p class="sonuc" id="komisyonOrani"></p>
+        </div>
+        <div class="box">
+          <p class="text">Satış Fiyatı (KDV Dahil) :</p>
+          <p class="sonuc" id="satisKdvDahil"></p>
+        </div>
+        <div class="box">
+          <p class="text">Satış Fiyatı (KDV Hariç) :</p>
+          <p class="sonuc" id="satisKdvHaric"></p>
+        </div>
+        <div class="box">
+          <p class="text">Alış Fiyatı :</p>
+          <p class="sonuc" id="alisFiyati"></p>
+        </div>
+        <div class="box">
+          <p class="text">Komisyon kesintisi :</p>
+          <p class="sonuc" id="komisyonKesinti"></p>
+        </div>
+        <div class="box">
+          <p class="text">Kargo Tutarı :</p>
+          <p class="sonuc" id="kargoTutari"></p>
+        </div>
+        <div class="box">
+          <p class="text">Net Kâr :</p>
+          <p class="sonuc" id="netkarSonuc"></p>
+        </div>
       </div>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 const btnHesaplama = document.getElementById("btnHesaplama");
+const btnTemizle = document.getElementById("btnTemizle");
 const pazaryeri = document.getElementById("pazaryeri");
 const pazaryeriTrendyol = document.getElementById("pazaryeriTrendyol");
 const pazaryeriHepsiburada = document.getElementById("pazaryeriHepsiburada");
@@ -9,11 +10,11 @@ const kategori = document.getElementById("kategori");
 const kategoriList = document.getElementById("kategoriList");
 const alisInput = document.getElementById("alisInput");
 const satisInput = document.getElementById("satisInput");
-const kdv0 = document.getElementById("kdv0");
+const kdvsel = document.getElementById("kdvsel");
 const kdv1 = document.getElementById("kdv1");
 const kdv8 = document.getElementById("kdv8");
 const kdv18 = document.getElementById("kdv18");
-const kdvBox = document.getElementById("kdvBox");
+
 const kargoInput = document.getElementById("kargoInput");
 const sonucListesi = document.getElementById("sonucListesi");
 const komisyonOrani = document.getElementById("komisyonOrani");
@@ -2573,21 +2574,17 @@ pazaryeri.addEventListener("click", () => {
 });
 let komisyon = "";
 let kdv = 0.18;
-kdv0.addEventListener("click", () => {
-  kdv = 0;
-  kdvBox.innerHTML = `% ${(kdv * 100).toFixed(1)}`;
+kdvsel.addEventListener("click", () => {
+  if (kdvsel.value == kdv1.value) {
+    kdv = 0.01;
+  } else if (kdvsel.value == kdv8.value) {
+    kdv = 0.08;
+  } else if (kdvsel.value == kdv18.value) {
+    kdv = 0.18;
+  }
 });
-kdv1.addEventListener("click", () => {
-  kdv = 0.01;
-  kdvBox.innerHTML = `% ${(kdv * 100).toFixed(1)}`;
-});
-kdv8.addEventListener("click", () => {
-  kdv = 0.08;
-  kdvBox.innerHTML = `% ${(kdv * 100).toFixed(1)}`;
-});
-kdv18.addEventListener("click", () => {
-  kdv = 0.18;
-  kdvBox.innerHTML = `% ${(kdv * 100).toFixed(1)}`;
+btnTemizle.addEventListener("click", () => {
+  location.reload();
 });
 btnHesaplama.addEventListener("click", () => {
   const k1 = document.getElementById("1");
