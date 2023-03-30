@@ -15,42 +15,52 @@
         kategorilerdeki komisyon oranınızı ve karlılığınızı kolayca hesaplayın.
       </p>
       <br />
-      <label for="pazaryeri">Pazaryeri</label>
-      <br />
-      <select name="pazaryeri" id="pazaryeri">
-        <option value=""></option>
-        <option id="pazaryeriTrendyol" value="Trendyol">Trendyol</option>
-        <option id="pazaryeriHepsiburada" value="Hepsiburada">
-          Hepsiburada
-        </option>
-        <option id="pazaryeriN11" value="n11">n11</option>
-        <option id="pazaryeriCiceksepeti" value="Çiçek Sepeti">
-          Çiçek Sepeti
-        </option>
-        <option id="pazaryeriAmazon" value="Amazon">Amazon</option>
-      </select>
-      <br /><br /><br />
-      <label for="kategori">Ürün Kategorisi</label>
-      <br />
-      <input
-        list="kategoriList"
-        type="search"
-        name=""
-        id="kategori"
-        placeholder=" Ürün Kategorisi Ara"
-      />
-      <datalist id="kategoriList"></datalist>
-      <!-- <select name="kategori" id="kategori" ></select>  -->
-      <!-- </select> -->
-      <br /><br /><br />
-      <label for="alisInput">Alış Fiyatı (KDV dahil)</label>
-      <br />
-      <input type="number" id="alisInput" placeholder="₺ Fiyat giriniz" />
-      <br /><br /><br />
-      <label for="satisInput">Satış Fiyatı (KDV dahil)</label>
-      <br />
-      <input type="number" id="satisInput" placeholder="₺ Fiyat giriniz" />
-      <br /><br /><br />
+      <div class="dropdowndiv">
+        <label for="pazaryeri">Pazaryeri</label>
+        <br />
+        <select name="pazaryeri" id="pazaryeri">
+          <option value=""></option>
+          <option id="pazaryeriTrendyol" value="Trendyol">Trendyol</option>
+          <option id="pazaryeriHepsiburada" value="Hepsiburada">
+            Hepsiburada
+          </option>
+          <option id="pazaryeriN11" value="n11">n11</option>
+          <option id="pazaryeriCiceksepeti" value="Çiçek Sepeti">
+            Çiçek Sepeti
+          </option>
+          <option id="pazaryeriAmazon" value="Amazon">Amazon</option>
+        </select>
+      </div>
+
+      <br /><br />
+      <div class="dropdowndiv">
+        <label for="kategori">Ürün Kategorisi</label>
+        <br />
+        <input
+          list="kategoriList"
+          type="search"
+          name=""
+          id="kategori"
+          placeholder=" Ürün Kategorisi Ara"
+        />
+        <datalist id="kategoriList"></datalist>
+      </div>
+
+      <br /><br />
+      <div class="dropdowndiv">
+        <label for="alisInput">Alış Fiyatı (KDV dahil)</label>
+        <br />
+        <input type="number" id="alisInput" placeholder="₺ Fiyat giriniz" />
+      </div>
+
+      <br /><br />
+      <div class="dropdowndiv">
+        <label for="satisInput">Satış Fiyatı (KDV dahil)</label>
+        <br />
+        <input type="number" id="satisInput" placeholder="₺ Fiyat giriniz" />
+      </div>
+
+      <br /><br />
 
       <div id="kargoVkdv">
         <div id="kdvcontainer">
