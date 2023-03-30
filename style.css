@@ -171,6 +171,9 @@ input {
 }
 /* Responsive */
 @media screen and (max-width: 600px) {
+  body {
+    width: 600px;
+  }
   #sonucBox {
     width: 400px;
     height: 300px;
