@@ -26,6 +26,7 @@ body {
 #container {
   /* border: 1px solid red; */
   width: 700px;
+  border: 1px solid red;
   text-align: center;
   margin: auto;
 }
@@ -168,23 +169,32 @@ input {
   color: red;
 }
 /* Responsive */
-@media screen and (max-width: 600px) {
-  body {
-    width: 400px;
-  }
+@media screen and (max-width: 607px) {
   #sonucBox {
     width: 400px;
     height: 300px;
     font-size: 0.65rem;
   }
+  #container {
+  width: 500px;
+  text-align: center;
+  margin: auto;
+}
   .box {
+    /* border:1px solid red; */
     display: flex;
-    margin-left: 10px;
+    margin-left: 15px;
     justify-content: space-between;
-    margin-right: 10px;
+    margin-right: 15px;
     font-weight: 500;
     font-size: 12px;
   } 
+  .text {
+    text-align: left;
+  }
+  .sonuc {
+    text-align: right;
+  }
   #pazaryeri {
     width: 390px;
     height: 40px;
