@@ -2,31 +2,24 @@
 body {
   margin: auto;
   background-color: #142677fa;
-  /* width: 1440px; */
-  /* height: 1985px; */
   font-family: "Open Sans", sans-serif;
   color: white;
   box-sizing: border-box;
   padding-bottom: 15px;
 }
 .dropdowndiv {
-  /* border: 1px solid red; */
   width: 530px;
   text-align: left;
   margin: auto;
 }
 #kdvcontainer {
-  /* border: 1px solid red; */
   text-align: left;
 }
 #kargocontainer {
-  /* border: 1px solid red; */
   text-align: left;
 }
 #container {
-  /* border: 1px solid red; */
   width: 700px;
-  border: 1px solid red;
   text-align: center;
   margin: auto;
 }
@@ -181,7 +174,6 @@ input {
   margin: auto;
 }
   .box {
-    /* border:1px solid red; */
     display: flex;
     margin-left: 15px;
     justify-content: space-between;
@@ -227,7 +219,6 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border: 1px solid red; */
     width: 400px;
     height: 180px;
     margin: auto;
@@ -236,7 +227,6 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border: 1px solid red; */
     width: 400px;
     height: 100px;
     margin: auto;
