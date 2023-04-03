@@ -16,10 +16,11 @@
       </p>
       <br />
       <div class="dropdowndiv">
-        <label for="pazaryeri">Pazaryeri</label>
-        <br />
+        <div class="baslik">
+          <label for="pazaryeri">Pazaryeri</label>
+        </div>
         <select name="pazaryeri" id="pazaryeri">
-          <option value=""></option>
+          <option class="placeholder" value="Pazaryeri seçin">Pazaryeri seçin</option>
           <option id="pazaryeriTrendyol" value="Trendyol">Trendyol</option>
           <option id="pazaryeriHepsiburada" value="Hepsiburada">
             Hepsiburada
@@ -31,11 +32,10 @@
           <option id="pazaryeriAmazon" value="Amazon">Amazon</option>
         </select>
       </div>
-
-      <br /><br />
       <div class="dropdowndiv">
-        <label for="kategori">Ürün Kategorisi</label>
-        <br />
+        <div class="baslik">
+          <label for="kategori">Ürün Kategorisi</label>
+        </div>
         <input
           list="kategoriList"
           type="search"
@@ -45,48 +45,43 @@
         />
         <datalist id="kategoriList"></datalist>
       </div>
-
-      <br /><br />
       <div class="dropdowndiv">
-        <label for="alisInput">Alış Fiyatı (KDV dahil)</label>
-        <br />
+        <div class="baslik">
+          <label for="alisInput">Alış Fiyatı (KDV dahil)</label>
+        </div>
         <input type="number" id="alisInput" placeholder="₺ Fiyat giriniz" />
       </div>
-
-      <br /><br />
       <div class="dropdowndiv">
-        <label for="satisInput">Satış Fiyatı (KDV dahil)</label>
-        <br />
+        <div class="baslik">
+          <label for="satisInput">Satış Fiyatı (KDV dahil)</label>
+        </div>
         <input type="number" id="satisInput" placeholder="₺ Fiyat giriniz" />
       </div>
-
-      <br /><br />
-
       <div id="kargoVkdv">
-        <div id="kdvcontainer">
-          <label for="">KDV miktarı</label>
-          <br />
+        <div class="dropdowndiv" id="kdvcontainer">
+          <div class="baslik">
+            <label for="">KDV miktarı</label>
+          </div>
           <select name="" id="kdvsel">
-            <option value=""></option>
+            <option class="placeholder" value="KDV oranı seçin">
+              KDV oranı seçin
+            </option>
             <option value="1" id="kdv1">1</option>
             <option value="8" id="kdv8">8</option>
             <option value="18" id="kdv18">18</option>
           </select>
         </div>
-        <div id="kargocontainer">
-          <label for="">Kargo Ücreti (KDV dahil)</label>
-          <br />
+        <div class="dropdowndiv" id="kargocontainer">
+          <div class="baslik">
+            <label for="">Kargo Ücreti (KDV dahil)</label>
+          </div>
           <input type="number" id="kargoInput" placeholder="₺ Fiyat giriniz" />
         </div>
       </div>
-
-      <br /><br />
       <div class="buttons">
         <a id="btnTemizle">Temizle</a>
         <button id="btnHesaplama">Hesapla</button>
       </div>
-
-      <br /><br />
       <div id="sonucBox">
         <h2 id="sonucBaslik">Hesaplama Sonucu :</h2>
         <div class="box">
