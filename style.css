@@ -20,6 +20,8 @@ body {
 .text {
   font-family: "Inter", sans-serif;
   font-weight: bolder;
+  width: 300px;
+  text-align: start;
 
 }
 .sonuc {
@@ -204,6 +206,8 @@ input {
   .text {
     /* border: 1px solid red; */
     margin-left: 0px;
+    text-align: start;
+    width: 200px;
   }
   .sonuc {
     /* border: 1px solid blue; */
